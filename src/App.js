@@ -56,8 +56,8 @@ function App() {
                 <Home {...props} handleLogin={handleLogin} loggedInStatus={loggedIn.loggedInStatus}/>
               )} 
               />
-            <Route path="/login" component={Login} /> 
-            <Route path="/signup" component={Signup} />
+            {/* <Route path="/login" component={Login} /> 
+            <Route path="/signup" component={Signup} /> */}
             <Route path="/dashboard" render={props => (
                 <Dashboard {...props} loggedInStatus={loggedIn.loggedInStatus}/>
               )} 
