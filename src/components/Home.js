@@ -3,7 +3,6 @@ import SignUp from './SignUp'
 
 function Home() {
     
-    
     return(
         <>
         <div>Home</div>
