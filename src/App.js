@@ -15,10 +15,8 @@ function App() {
         <Header />
         <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} /> 
-            <Route path="/signup" component={Signup} />
-            <Route path="/:id" render={routerProps => <Dashboard match={routerProps}/>}/>
-            <Redirect to="/login"/>
+            <Route path="/dashboard" render={routerProps => <Dashboard match={routerProps}/>}/>
+            <Redirect to="/"/>
         </Switch>
         <Footer />
     </div>
