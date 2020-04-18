@@ -62,7 +62,8 @@ function App() {
                 <Dashboard {...props} loggedInStatus={loggedIn.loggedInStatus}/>
               )} 
               />
-            <Redirect to="/login"/>
+            <Route path="/login" = {Login} />
+            <Redirect to="/"/>
         </Switch>
         <Footer />
     </div>

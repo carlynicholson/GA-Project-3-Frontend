@@ -1,5 +1,6 @@
 import React from 'react'
 import SignUp from './SignUp'
+import Login from './Login'
 
 function Home(props) {
     
@@ -14,6 +15,7 @@ function Home(props) {
         <div>Home</div>
         <h1>Status: {props.loggedInStatus} </h1>
         <SignUp handleSuccessfulAuth={handleSuccessfulAuth}/>
+        <Login />
         </>
     )
 }
