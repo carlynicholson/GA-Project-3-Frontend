@@ -1,8 +1,14 @@
 import React from 'react'
 
-function Dashboard() {
+function Dashboard(props) {
+    
+    
+    
     return(
+        <>
         <div>Dashboard</div>
+        <h1>Status: {props.loggedInStatus} </h1>
+        </>
     )
 }
 
