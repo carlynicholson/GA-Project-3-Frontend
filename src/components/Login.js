@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import axios from 'axios'
 
 //https://www.youtube.com/watch?v=QoLUB0QkUaE
 
@@ -16,7 +17,7 @@ function Login () {
         })
     }
     function handleSubmit(e) {
-        axios.post("http://localhost:3000/registration", {
+        axios.post("http://localhost:5150", {
             user:{
                 email: newUser.email,
                 password: newUser.password,

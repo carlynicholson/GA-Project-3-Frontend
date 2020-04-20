@@ -6,6 +6,7 @@ import Login from './components/Login'
 import Signup from './components/SignUp'
 import Dashboard from './components/Dashboard'
 import Footer from './components/Footer'
+import Home from './components/Home'
 import axios from 'axios'
 
 
@@ -17,7 +18,7 @@ function App() {
   })
 
   function checkLoginStatus(){
-    axios.get("http://localhost:3000/logged_in",{
+    axios.get("http://localhost:5150/logged_in",{
       withCredentials: true
     }).then(response =>{
       console.log('logged in?', response)
@@ -62,7 +63,7 @@ function App() {
                 <Dashboard {...props} loggedInStatus={loggedIn.loggedInStatus}/>
               )} 
               />
-            <Route path="/login" = {Login} />
+            <Route path="/login" component= {Login} />
             <Redirect to="/"/>
         </Switch>
         <Footer />
