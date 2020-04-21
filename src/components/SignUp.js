@@ -53,8 +53,5 @@ function SignUp (props) {
 
 }
 
-<<<<<<< HEAD
-export default SignUp
-=======
 export default SignUp;
->>>>>>> 3257515ae64616f5d6a14c2508cf2c75f463d0d4
+
