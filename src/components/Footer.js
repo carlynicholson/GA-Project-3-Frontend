@@ -2,7 +2,9 @@ import React from 'react'
 
 function Footer() {
     return(
-        <div>Footer</div>
+        <footer id={'footer-container'}>
+            <p id={'footer-content'}>&copy; Fetch! 2020</p>
+        </footer>
     )
 }
 

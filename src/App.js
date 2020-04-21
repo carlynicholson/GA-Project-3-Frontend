@@ -7,7 +7,10 @@ import Signup from './components/SignUp'
 import Dashboard from './components/Dashboard'
 import Footer from './components/Footer'
 import Home from './components/Home'
+<<<<<<< HEAD
 import axios from 'axios'
+=======
+>>>>>>> 3257515ae64616f5d6a14c2508cf2c75f463d0d4
 
 
 function App() {
@@ -53,6 +56,7 @@ function App() {
     <div className="App">
         <Header />
         <Switch>
+<<<<<<< HEAD
             <Route 
               exact path="/" 
               render={props => (
@@ -74,6 +78,13 @@ function App() {
             />
             <Route exact path="/login" component= {Login} />
             <Redirect exact to="/"/>
+=======
+            <Route exact path="/" component={Home} />
+            <Route path="/dashboard" render={routerProps => <Dashboard match={routerProps}/>}/>
+            <Route path="/login" component={Login} />
+            <Route path="/signup" component={Signup} />
+            <Redirect to="/"/>
+>>>>>>> 3257515ae64616f5d6a14c2508cf2c75f463d0d4
         </Switch>
         <Footer />
     </div>
