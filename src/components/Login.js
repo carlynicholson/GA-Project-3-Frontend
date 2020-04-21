@@ -3,7 +3,7 @@ import axios from 'axios'
 import {verifyUser} from '../services/api-loginHelper'
 import {HomeContext} from './Home'
 
-<<<<<<< HEAD
+
 function Login () {
     const handleSuccessfulLogin = useContext(HomeContext)
     console.log('login-context',handleSuccessfulLogin)
@@ -52,12 +52,4 @@ function Login () {
 }
 
 export default Login
-=======
-function Login() {
-    return(
-       <div>Login</div>
-    )
-}
 
-export default Login;
->>>>>>> 3257515ae64616f5d6a14c2508cf2c75f463d0d4
