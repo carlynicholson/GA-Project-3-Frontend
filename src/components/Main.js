@@ -7,30 +7,17 @@ import Header from './Header'
 import Footer from './Footer'
 
 export default function Main(props) {
-    console.log('main prps',props)
     return (
-<<<<<<< HEAD
-        <Switch>
-            
-            <Route exact path="/" component={Home} />
-            <Route path="/dashboard" component={Dashboard}/>
-            <Route path="/login" component={Login} />
-            
-            <Redirect to="/"/>
-        
-            <Redirect to={'/'} />
-        </Switch>
-=======
         <>
             <Header />
             <Switch>
                 <Route exact path="/" component={Login} />
+                <Route exact path="/login" component={Login} />
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signup" component={SignUp} />
                 <Redirect to={'/login'} />
             </Switch>
             <Footer />
         </>
->>>>>>> login-registration
     );
 }

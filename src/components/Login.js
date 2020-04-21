@@ -1,12 +1,10 @@
 import React, {useState,useContext} from 'react'
-import axios from 'axios'
 import {verifyUser} from '../services/api-loginHelper'
-import {HomeContext} from './Home'
+import {AppContext} from '../App.js'
+import {Link} from "react-router-dom";
 
-
-function Login () {
-    const handleSuccessfulLogin = useContext(HomeContext)
-    console.log('login-context',handleSuccessfulLogin)
+function Login (props) {
+    const handleLogin = useContext(AppContext)
     const [User, setUser] = useState({
         email:"",
         password:"",
@@ -19,14 +17,12 @@ function Login () {
             [e.target.name]: value
         })
     }
+
     const handleSubmit = async(e) => {
-        // console.log('form submitted',newUser)
         e.preventDefault()
         const json = await verifyUser(User).then(response => {
-            console.log("verify res", response)
             if(response.status === 200){
-                console.log('submit-ok')
-                handleSuccessfulLogin(response.data)
+                handleSuccessfulAuth(response.data)
             }else{
                 console.log('login error')
             }
@@ -35,14 +31,19 @@ function Login () {
         })
     }
 
+    const handleSuccessfulAuth = (data) => {
+        handleLogin(data);
+        props.history.push("/dashboard");
+      }
+
         return(
-            <div>
-                <form onSubmit={handleSubmit}>
-                    <input type="email" name="email" placeholder="Email" value={User.email} onChange={handleChange} required />
-                    <input type="password" name="password" placeholder="Password" value={User.password} onChange={handleChange} required />
-                    <button type="submit">Login</button>
+            <div className="Login">
+                <form className="Login-Form" onSubmit={handleSubmit}>
+                    <input className="Login-Form-Input" type="email" name="email" placeholder="Email" value={User.email} onChange={handleChange} required />
+                    <input className="Login-Form-Input" type="password" name="password" placeholder="Password" value={User.password} onChange={handleChange} required />
+                    <button className="Login-Form-Button" type="submit">Login</button>
                 </form>
-            
+                <p>Don't have an account? <Link to="/signup">Create one.</Link></p>
             </div>
         )
     
