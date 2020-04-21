@@ -6,6 +6,7 @@ import Login from './components/Login'
 import Signup from './components/SignUp'
 import Dashboard from './components/Dashboard'
 import Footer from './components/Footer'
+import Home from './components/Home'
 
 
 function App() {
@@ -14,11 +15,11 @@ function App() {
     <div className="App">
         <Header />
         <Switch>
-            <Route exact path="/" component={Login} />
-            <Route path="/login" component={Login} /> 
+            <Route exact path="/" component={Home} />
+            <Route path="/dashboard" render={routerProps => <Dashboard match={routerProps}/>}/>
+            <Route path="/login" component={Login} />
             <Route path="/signup" component={Signup} />
-            <Route path="/:id" render={routerProps => <Dashboard match={routerProps}/>}/>
-            <Redirect to="/login"/>
+            <Redirect to="/"/>
         </Switch>
         <Footer />
     </div>
