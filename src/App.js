@@ -1,14 +1,11 @@
 import React, {useState,useContext} from 'react';
 
 import './App.css';
-import Header from './components/Header'
-import Login from './components/Login'
-import Signup from './components/SignUp'
-import Dashboard from './components/Dashboard'
-import Footer from './components/Footer'
+
 import Home from './components/Home'
 import Main from './components/Main'
 import axios from 'axios'
+import SignUp from './components/SignUp';
 
 export const AppContext = React.createContext()
 
@@ -53,9 +50,7 @@ function componentDidMount(){
   return (
     <div className="App">
       <AppContext.Provider>
-        <Header />
         <Main />
-        <Footer />
       </AppContext.Provider>
     </div>
   );
