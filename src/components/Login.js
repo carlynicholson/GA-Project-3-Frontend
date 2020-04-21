@@ -1,46 +1,45 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import axios from 'axios'
-
-//https://www.youtube.com/watch?v=QoLUB0QkUaE
+import {verifyUser} from '../services/api-loginHelper'
+import {HomeContext} from './Home'
 
 function Login () {
-    const [newUser, setNewUser] = useState({
+    const handleSuccessfulLogin = useContext(HomeContext)
+    console.log('login-context',handleSuccessfulLogin)
+    const [User, setUser] = useState({
         email:"",
         password:"",
-        password_confirmation:"",
-        registrationErrors:""
     })
     
-    function handleChange(e){
-        setNewUser({
-            [e.target.name]: e.target.value
+    const handleChange = (e) => {
+        const value = e.target.value
+        setUser({
+            ...User,
+            [e.target.name]: value
         })
     }
-    function handleSubmit(e) {
-        axios.post("http://localhost:5150", {
-            user:{
-                email: newUser.email,
-                password: newUser.password,
-                password_confirmation: newUser.password_confirmation
+    const handleSubmit = async(e) => {
+        // console.log('form submitted',newUser)
+        e.preventDefault()
+        const json = await verifyUser(User).then(response => {
+            console.log("verify res", response)
+            if(response.status === 200){
+                console.log('submit-ok')
+                handleSuccessfulLogin(response.data)
+            }else{
+                console.log('login error')
             }
-        },
-        {withCredentials: true}
-        ).then(response => {
-            console.log("registration res", response)
         }).catch(error =>{
             console.log("registration error", error)
-        })  //need route from backend
-
-        
-        e.preventDefault();
+        })
     }
+
         return(
             <div>
                 <form onSubmit={handleSubmit}>
-                    <input type="email" name="email" placeholder="Email" value={newUser.email} onChange={handleChange} required />
-                    <input type="password" name="password" placeholder="Password" value={newUser.password} onChange={handleChange} required />
-                    <input type="password" name="password_confirmation" placeholder="Password confirmation" value={newUser.password_confirmation} onChange={handleChange} required />
-                    <button type="submit">Register</button>
+                    <input type="email" name="email" placeholder="Email" value={User.email} onChange={handleChange} required />
+                    <input type="password" name="password" placeholder="Password" value={User.password} onChange={handleChange} required />
+                    <button type="submit">Login</button>
                 </form>
             
             </div>

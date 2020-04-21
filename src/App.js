@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useContext} from 'react';
 import  {Switch, Route, Redirect} from 'react-router-dom'
 import './App.css';
 import Header from './components/Header'
@@ -14,10 +14,9 @@ function App() {
   const [loggedIn, setLoggedIn] =useState({
     loggedInStatus: "NOT_LOGGED_IN",
     user:{}
-
   })
 
-  function checkLoginStatus(){
+  const checkLoginStatus = () => {
     axios.get("http://localhost:5150/logged_in",{
       withCredentials: true
     }).then(response =>{
@@ -38,10 +37,12 @@ function App() {
     }) //need this from backend
   }
   function handleLogin (data){
+    console.log('App-handleLogin', data)
     setLoggedIn({
       loggedInStatus: "LOGGED_IN",
-      user: data.user
+      user: data
     })
+    console.log('useState',loggedIn)
   }
 
   function componentDidMount(){
@@ -52,19 +53,27 @@ function App() {
     <div className="App">
         <Header />
         <Switch>
-            <Route exact path="/" 
+            <Route 
+              exact path="/" 
               render={props => (
-                <Home {...props} handleLogin={handleLogin} loggedInStatus={loggedIn.loggedInStatus}/>
-              )} 
-              />
+                <Home 
+                  {...props} 
+                  handleLogin={handleLogin} 
+                  loggedInStatus={loggedIn.loggedInStatus}/>
+                )} 
+            />
             {/* <Route path="/login" component={Login} /> 
             <Route path="/signup" component={Signup} /> */}
-            <Route path="/dashboard" render={props => (
-                <Dashboard {...props} loggedInStatus={loggedIn.loggedInStatus}/>
+            <Route 
+              exact path="/dashboard" 
+              render={props => (
+                <Dashboard 
+                  {...props} 
+                  loggedIn={loggedIn.user}/>
               )} 
-              />
-            <Route path="/login" component= {Login} />
-            <Redirect to="/"/>
+            />
+            <Route exact path="/login" component= {Login} />
+            <Redirect exact to="/"/>
         </Switch>
         <Footer />
     </div>

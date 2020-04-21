@@ -2,9 +2,12 @@ import React from 'react'
 import SignUp from './SignUp'
 import Login from './Login'
 
+export const HomeContext = React.createContext()
+
 function Home(props) {
     
-    function handleSuccessfulAuth(data){
+    const handleSuccessfulAuth = (data) => {
+        console.log('home-handleSuccess',data)
         props.handleLogin(data);
         props.history.push("/dashboard");
     }
@@ -14,8 +17,10 @@ function Home(props) {
         <>
         <div>Home</div>
         <h1>Status: {props.loggedInStatus} </h1>
-        <SignUp handleSuccessfulAuth={handleSuccessfulAuth}/>
-        <Login />
+        <HomeContext.Provider value={handleSuccessfulAuth}>
+            <SignUp handleSuccessfulAuth={handleSuccessfulAuth}/>
+            <Login />
+        </HomeContext.Provider>
         </>
     )
 }

@@ -5,6 +5,7 @@ import {createUser} from '../services/api-loginHelper'
 
 
 function SignUp (props) {
+    
     const [newUser, setNewUser] = useState({
         name: "",
         email:"",
@@ -13,27 +14,27 @@ function SignUp (props) {
     })
     
     const handleChange = (e) => {
-        console.log('name',e.target.name)
-        console.log('value',e.target.value)
+        const value = e.target.value
         setNewUser({
-            [e.target.name]: e.target.value
+            ...newUser,
+            [e.target.name]: value
         })
     }
+
     const handleSubmit = async(e) => {
-        console.log('form submitted')
+        // console.log('form submitted',newUser)
         e.preventDefault()
         const json = await createUser(newUser).then(response => {
-                console.log("registration res", response)
-                // if(response.data.status === 'created'){
-                // props.handleSuccessfulAuth(response.data)
-                // }
-            }).catch(error =>{
-                console.log("registration error", error)
-            })
-           
-      
-        
+            console.log("registration res", response)
+            if(response.status === 200){
+                console.log('submit-ok-props',props)
+                props.handleSuccessfulAuth(response.data)
+            }
+        }).catch(error =>{
+            console.log("registration error", error)
+        })
     }
+
         return(
             <div>
                 <form onSubmit={handleSubmit}>

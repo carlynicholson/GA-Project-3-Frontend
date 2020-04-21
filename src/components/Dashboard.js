@@ -7,7 +7,7 @@ function Dashboard(props) {
     return(
         <>
         <div>Dashboard</div>
-        <h1>Status: {props.loggedInStatus} </h1>
+        <h1>Welcome: {props.loggedIn.name} </h1>
         </>
     )
 }
