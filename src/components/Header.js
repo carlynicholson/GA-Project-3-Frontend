@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom";
 
 function Header() {
-    return(
+    return (
         <nav>
             <Link to={'/'} style={{textDecoration: 'none'}}>
                 <div><span id={'logo'}>Fetch</span></div>
@@ -14,7 +14,7 @@ function Header() {
                 <div>About</div>
             </Link>
         </nav>
-    )
+    );
 }
 
-export default Header
+export default Header;
