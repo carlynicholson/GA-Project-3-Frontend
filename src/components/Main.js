@@ -5,6 +5,7 @@ import SignUp from './SignUp'
 import Dashboard from './Dashboard'
 import Header from './Header'
 import Footer from './Footer'
+import Services from "./booking/services";
 
 export default function Main(props) {
     return (
@@ -15,6 +16,7 @@ export default function Main(props) {
                 <Route exact path="/login" component={Login}/>
                 <Route path="/dashboard" component={Dashboard}/>
                 <Route path="/signup" component={SignUp}/>
+                <Route path="/services" component={Services}/>
                 <Redirect to={'/login'}/>
             </Switch>
             <Footer/>
