@@ -2,6 +2,7 @@ import React, {useState, useContext} from 'react'
 import {verifyUser} from '../services/api-loginHelper'
 import {AppContext} from '../App.js'
 import {Link} from "react-router-dom";
+import './SignUp-Login.css'
 
 function Login(props) {
     const handleLogin = useContext(AppContext)
@@ -34,24 +35,31 @@ function Login(props) {
     };
 
     return (
-        <div className="Login">
-            <form className="Login-Form" onSubmit={handleSubmit}>
-                <input className="Login-Form-Input"
-                       type="email"
-                       name="email"
-                       placeholder="Email"
-                       value={User.email}
-                       onChange={handleChange} required/>
-                <input className="Login-Form-Input"
-                       type="password"
-                       name="password"
-                       placeholder="Password"
-                       value={User.password}
-                       onChange={handleChange} required/>
-                <button className="Login-Form-Button" type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <Link to="/signup">Create one.</Link></p>
-        </div>
+        <>
+            <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
+            <div className="Login-Container">
+                <div className="Login">
+                    
+                    <div className="User-Login">user login</div>
+                    <form className="Login-Form" onSubmit={handleSubmit}>
+                        <input className="Login-Form-Input"
+                            type="email"
+                            name="email"
+                            placeholder="EMAIL"
+                            value={User.email}
+                            onChange={handleChange} required/>
+                        <input className="Login-Form-Input"
+                            type="password"
+                            name="password"
+                            placeholder="PASSWORD"
+                            value={User.password}
+                            onChange={handleChange} required/>
+                        <div className="Login-Form-Button" type="submit">continue</div>
+                    </form>
+                    <p>Don't have an account? <Link to="/signup">Create one.</Link></p>
+                </div>
+            </div>
+        </>
     );
 }
 

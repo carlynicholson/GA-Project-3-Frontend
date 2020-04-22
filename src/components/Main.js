@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch, Redirect } from 'react-router-dom';
-import SignUp from './Login'
+import Login from './Login'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
 import Header from './Header'
@@ -14,7 +14,7 @@ export default function Main(props) {
           <Header/> 
             <Switch>
                 <Route exact path="/" component={Login} />
-                <Route exact path="login" component={Login} />
+                <Route exact path="/login" component={Login} />
                 <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signup" component={SignUp}/>
                 <Route exact path="/services" component={Services} />
