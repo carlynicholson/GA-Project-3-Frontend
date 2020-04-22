@@ -1,8 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState, createContext} from 'react';
 import './App.css';
 import Main from './components/Main'
-
-export const AppContext = React.createContext()
 
 function App() { 
   const [loggedIn, setLoggedIn] =useState({
@@ -28,3 +26,4 @@ const handleLogin = (data) => {
 }
 
 export default App;
+export const AppContext = createContext();
