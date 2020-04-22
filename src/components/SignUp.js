@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react'
+import React, {useState, useContext} from 'react'
 import {createUser} from '../services/api-loginHelper'
 import {AppContext} from '../App.js'
 import {Link} from "react-router-dom";
@@ -24,10 +24,10 @@ function SignUp(props) {
         e.preventDefault();
         const json = await createUser(newUser).then(response => {
             if (response.status === 200) {
-                handleSuccessfulAuth(response.data)
+                handleSuccessfulAuth(response.data);
             }
         }).catch(error => {
-            console.log("registration error", error)
+            console.log("registration error", error);
         });
     };
 

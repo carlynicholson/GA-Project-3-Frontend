@@ -1,26 +1,42 @@
-import React, {useState} from 'react';
+import React, {useState, createContext} from 'react';
 import './App.css';
 import Main from './components/Main'
 
-export const AppContext = React.createContext()
-
 function App() {
+  const [service, setService] = useState("");
+  const [date, setDate] = useState(new Date());
   const [loggedIn, setLoggedIn] = useState({
     loggedInStatus: "Not_Logged_In",
     user: {}
   });
+
+  const handleServiceClick = (service) => {
+    setService(service);
+  };
+
+  const onDateClick = date => setDate(date);
 
   const handleLogin = (data) => {
     console.log('App-handleLogin', data)
     setLoggedIn({
       loggedInStatus: "Logged_In",
       user: data
-    });
+    })
   };
 
   return (
       <div className="App">
-        <AppContext.Provider value={handleLogin}>
+        <AppContext.Provider value={
+          {
+            handleLogin,
+            handleServiceClick,
+            onDateClick,
+            setService,
+            service,
+            date,
+            setDate,
+          }
+        }>
           <Main/>
         </AppContext.Provider>
       </div>
@@ -28,3 +44,4 @@ function App() {
 }
 
 export default App;
+export const AppContext = createContext();

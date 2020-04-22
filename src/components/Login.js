@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react'
+import React, {useState, useContext} from 'react'
 import {verifyUser} from '../services/api-loginHelper'
 import {AppContext} from '../App.js'
 import {Link} from "react-router-dom";
@@ -12,17 +12,14 @@ function Login(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setUser({
-            ...User,
-            [e.target.name]: value
-        });
+        setUser({...User, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         const json = await verifyUser(User).then(response => {
             if (response.status === 200) {
-                handleSuccessfulAuth(response.data);
+                handleSuccessfulAuth(response.data)
             } else {
                 console.log('login error')
             }
