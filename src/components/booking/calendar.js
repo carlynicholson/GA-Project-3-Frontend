@@ -1,17 +1,23 @@
-import React, {useState} from "react";
+import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 
-export default function CalendarApp() {
-	const [date, setDate] = useState(new Date());
+class CalendarApp extends Component {
+	state = {
+		date: new Date(),
+	}
 
-	const onChange = date => this.setState({ date })
+	onChange = date => this.setState({ date })
 
-	return (
-		<div>
-			<Calendar
-				onChange={onChange}
-				value={date}
-			/>
-		</div>
-	);
-};
+	render() {
+		return (
+			<div>
+				<Calendar
+					onChange={this.onChange}
+					value={this.state.date}
+				/>
+			</div>
+		);
+	}
+}
+
+export default CalendarApp;
