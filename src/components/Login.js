@@ -12,10 +12,7 @@ function Login(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setUser({
-            ...User,
-            [e.target.name]: value
-        });
+        setUser({...User, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {
