@@ -7,6 +7,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
+import Confirmation from './confirmation/Confirmation';
 
 export default function Main(props) {
     return (
