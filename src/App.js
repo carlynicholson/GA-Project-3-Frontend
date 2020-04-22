@@ -4,26 +4,26 @@ import Main from './components/Main'
 
 export const AppContext = React.createContext()
 
-function App() { 
-  const [loggedIn, setLoggedIn] =useState({
-  loggedInStatus: "Not_Logged_In",
-  user:{}
-})  
+function App() {
+  const [loggedIn, setLoggedIn] = useState({
+    loggedInStatus: "Not_Logged_In",
+    user: {}
+  });
 
-const handleLogin = (data) => {
-  console.log('App-handleLogin', data)
-  setLoggedIn({
-    loggedInStatus: "Logged_In",
-    user: data
-  })
-}
+  const handleLogin = (data) => {
+    console.log('App-handleLogin', data)
+    setLoggedIn({
+      loggedInStatus: "Logged_In",
+      user: data
+    });
+  };
 
   return (
-    <div className="App">
-      <AppContext.Provider value={handleLogin}>
-        <Main />
-      </AppContext.Provider>
-    </div>
+      <div className="App">
+        <AppContext.Provider value={handleLogin}>
+          <Main/>
+        </AppContext.Provider>
+      </div>
   );
 }
 
