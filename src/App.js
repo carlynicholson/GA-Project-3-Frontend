@@ -4,6 +4,7 @@ import Main from './components/Main'
 
 function App() {
   const [service, setService] = useState("");
+  const [date, setDate] = useState(new Date());
   const [loggedIn, setLoggedIn] = useState({
     loggedInStatus: "Not_Logged_In",
     user: {}
@@ -12,6 +13,8 @@ function App() {
   const handleServiceClick = (service) => {
     setService(service);
   };
+
+  const onDateClick = date => setDate(date);
 
   const handleLogin = (data) => {
     console.log('App-handleLogin', data)
@@ -27,7 +30,11 @@ function App() {
           {
             handleLogin,
             handleServiceClick,
-            setService
+            onDateClick,
+            setService,
+            service,
+            date,
+            setDate,
           }
         }>
           <Main/>

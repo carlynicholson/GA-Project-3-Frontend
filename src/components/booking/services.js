@@ -17,19 +17,19 @@ export default function Services() {
 				<div className={'booking-service-walk-icon'}>
 					<img src={walkIcon}
 					     alt={'walk'}
-					     onClick={ () => appProps.handleServiceClick('walk')}/>
+					     onClick={ () => appProps.handleServiceClick('Walk')}/>
 					<p>Walk</p>
 				</div>
 				<div className={'booking-service-groom-icon'}>
 					<img src={groomIcon}
 					     alt={'groom'}
-					     onClick={ () => appProps.handleServiceClick('groom')}/>
+					     onClick={ () => appProps.handleServiceClick('Groom')}/>
 					<p>Groom</p>
 				</div>
 				<div className={'booking-service-overnight-icon'}>
 					<img src={overnightIcon}
 					     alt={'overnight'}
-					     onClick={ () => appProps.handleServiceClick('overnight')}/>
+					     onClick={ () => appProps.handleServiceClick('Overnight')}/>
 					<p>Overnight</p>
 				</div>
 			</div>

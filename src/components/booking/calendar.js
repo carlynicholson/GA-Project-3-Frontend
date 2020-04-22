@@ -1,23 +1,29 @@
-import React, { Component } from 'react';
+import React, {useContext} from 'react';
 import Calendar from 'react-calendar';
+import logo from '../../assets/logo-color.png';
+import {AppContext} from "../../App";
+import {Link} from "react-router-dom";
 
-class CalendarApp extends Component {
-	state = {
-		date: new Date(),
-	}
+function CalendarApp() {
+	const appProps = useContext(AppContext)
+	console.log(appProps.date);
 
-	onChange = date => this.setState({ date })
-
-	render() {
-		return (
-			<div>
+	return (
+		<div>
+			<img src={logo} alt={'logo'}/>
+			<h2>{appProps.service}</h2>
+			<h3>Select a date/time.</h3>
+			<div id={'calendar-container'}>
 				<Calendar
-					onChange={this.onChange}
-					value={this.state.date}
+					onChange={appProps.onDateClick}
+					value={appProps.date}
 				/>
 			</div>
-		);
-	}
+			<Link to={'/localproviders'}>
+				<button>Continue</button>
+			</Link>
+		</div>
+	);
 }
 
 export default CalendarApp;
