@@ -46,7 +46,8 @@ function SignUp(props) {
                        value={newUser.name}
                        onChange={handleChange} required/>
                 <input className="SignUp-Form-Input"
-                       type="email" name="email"
+                       type="email"
+                       name="email"
                        placeholder="Email"
                        value={newUser.email}
                        onChange={handleChange} required/>
