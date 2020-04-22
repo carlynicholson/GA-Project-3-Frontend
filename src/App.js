@@ -35,6 +35,7 @@ function App() {
             service,
             date,
             setDate,
+            loggedIn
           }
         }>
           <Main/>
