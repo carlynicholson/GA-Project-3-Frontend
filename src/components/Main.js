@@ -12,16 +12,15 @@ import Confirmation from './confirmation/Confirmation';
 export default function Main(props) {
     return (
         <>
-            <Header/>
+          <Header/> 
             <Switch>
-                <Route exact path="/" component={Login}/>
-                <Route exact path="/login" component={Login}/>
-                <Route path="/dashboard" component={Dashboard}/>
+                <Route exact path="/" component={Login} />
+                <Route exact path="/login" component={Login} />
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signup" component={SignUp}/>
-                <Route path="/services" component={Services}/>
-                <Route path="/calendar" component={CalendarApp}/>
-                <Route path="/request" component={Confirmation}/>
-                {/*<Redirect to={'/login'}/>*/}
+                <Route exact path="/services" component={Services} />
+                <Route exact path="/calendar" component={CalendarApp} />
+                <Redirect to='/login' />
             </Switch>
             <Footer/>
         </>
