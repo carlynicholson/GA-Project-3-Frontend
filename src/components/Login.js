@@ -54,7 +54,7 @@ function Login(props) {
                             placeholder="PASSWORD"
                             value={User.password}
                             onChange={handleChange} required/>
-                        <div className="Login-Form-Button" type="submit">continue</div>
+                        <button className="Login-Form-Button" type="submit">continue</button>
                     </form>
                     <p>Don't have an account? <Link to="/signup">Create one.</Link></p>
                 </div>
