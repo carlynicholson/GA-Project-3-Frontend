@@ -2,7 +2,7 @@ import React, {useState, createContext} from 'react';
 import './App.css';
 import Main from './components/Main'
 
-function App() {
+function App(props) {
   const [service, setService] = useState("");
   const [date, setDate] = useState(new Date());
   const [loggedIn, setLoggedIn] = useState({
@@ -37,7 +37,7 @@ function App() {
             setDate,
           }
         }>
-          <Main/>
+          <Main />
         </AppContext.Provider>
       </div>
   );

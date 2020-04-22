@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Login from './Login'
+import SignUp from './Login'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
 import Header from './Header'
@@ -11,15 +11,15 @@ import CalendarApp from "./booking/calendar";
 export default function Main(props) {
     return (
         <>
-            <Header/>
+          <Header/> 
             <Switch>
-                <Route exact path="/" component={Login}/>
-                <Route exact path="/login" component={Login}/>
-                <Route path="/dashboard" component={Dashboard}/>
+                <Route exact path="/" component={Login} />
+                <Route exact path="login" component={Login} />
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signup" component={SignUp}/>
-                <Route path="/services" component={Services}/>
-                <Route path="/calendar" component={CalendarApp}/>
-                {/*<Redirect to={'/login'}/>*/}
+                <Route exact path="/services" component={Services} />
+                <Route exact path="/calendar" component={CalendarApp} />
+                <Redirect to='/login' />
             </Switch>
             <Footer/>
         </>
