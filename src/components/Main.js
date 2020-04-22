@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Switch, Redirect} from 'react-router';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Login from './Login'
 import SignUp from './SignUp'
 import Dashboard from './Dashboard'
@@ -17,7 +17,7 @@ export default function Main(props) {
                 <Route path="/dashboard" component={Dashboard}/>
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/services" component={Services}/>
-                <Redirect to={'/login'}/>
+                {/*<Redirect to={'/login'}/>*/}
             </Switch>
             <Footer/>
         </>
