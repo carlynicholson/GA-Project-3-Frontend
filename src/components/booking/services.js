@@ -8,34 +8,35 @@ import {Link} from "react-router-dom";
 
 export default function Services() {
 	const appProps = useContext(AppContext);
-
 	return (
 		<div id={'booking-service-content-container'}>
-			<img src={logo}/>
 			<h2 id={'booking-service-title'}>Which service does your pup need?</h2>
 			<div id={'booking-service-icon-container'}>
 				<div className={'booking-service-walk-icon'}>
-					<img src={walkIcon}
-					     alt={'walk'}
-					     onClick={ () => appProps.handleServiceClick('Walk')}/>
-					<p>Walk</p>
+					<Link to={'/calendar'}>
+						<img src={walkIcon}
+						     alt={'walk'}
+						     onClick={ () => appProps.handleServiceClick('Walk')}/>
+						<p>Walk</p>
+					</Link>
 				</div>
 				<div className={'booking-service-groom-icon'}>
-					<img src={groomIcon}
-					     alt={'groom'}
-					     onClick={ () => appProps.handleServiceClick('Groom')}/>
-					<p>Groom</p>
+					<Link to={'/calendar'}>
+						<img src={groomIcon}
+						     alt={'groom'}
+						     onClick={ () => appProps.handleServiceClick('Groom')}/>
+						<p>Groom</p>
+					</Link>
 				</div>
 				<div className={'booking-service-overnight-icon'}>
-					<img src={overnightIcon}
-					     alt={'overnight'}
-					     onClick={ () => appProps.handleServiceClick('Overnight')}/>
-					<p>Overnight</p>
+					<Link to={'/calendar'}>
+						<img src={overnightIcon}
+						     alt={'overnight'}
+						     onClick={ () => appProps.handleServiceClick('Overnight')}/>
+						<p>Overnight</p>
+					</Link>
 				</div>
 			</div>
-			<Link to={'/calendar'}>
-				<button>Continue</button>
-			</Link>
 		</div>
 	);
 };
