@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import {Link} from "react-router-dom";
+import './Header.css';
 
 function Header() {
     return (
@@ -10,8 +11,8 @@ function Header() {
             <Link to={'/'} style={{textDecoration: 'none'}}>
                 <div>Home</div>
             </Link>
-            <Link to={'/about'} style={{textDecoration: 'none'}}>
-                <div>About</div>
+            <Link to={'/our-team'} style={{textDecoration: 'none'}}>
+                <div>Our Team</div>
             </Link>
         </nav>
     );
