@@ -1,7 +1,7 @@
 import React, {useState, createContext} from 'react';
 import './App.css';
 import Main from './components/Main'
-import {getProviderByZip, verifyUser} from "./services/api-helper";
+import {getProviderByZip} from "./services/api-helper";
 
 function App() {
     const [service, setService] = useState("");

@@ -1,13 +1,10 @@
-import React, {useContext, useState} from "react";
+import React, {useContext} from "react";
 import Book from '../../../assets/book.png'
 import {AppContext} from "../../../App";
-import {createAppointment, getProviderByZip} from "../../../services/api-helper";
+import {createAppointment} from "../../../services/api-helper";
 
 export default function ProvidersListItem(props) {
 	const appProps = useContext(AppContext);
-	console.log(props.element['_id']);
-
-
 
 	const handleBookClick = async() => {
 		let book = props.element['_id'];
@@ -23,8 +20,6 @@ export default function ProvidersListItem(props) {
 			return ("registration error" + error);
 		});
 	};
-
-
 
 	return (
 		<div className={'provider-item'}>
