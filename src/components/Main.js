@@ -7,7 +7,6 @@ import Header from './header/Header'
 import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
-import Providers from "./booking/providers/providers";
 import Confirmation from './confirmation/Confirmation';
 import About from './about/About';
 
