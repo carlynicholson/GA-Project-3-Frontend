@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
 function SignUp(props) {
-    const handleLogin = useContext(AppContext)
+    const appProps = useContext(AppContext)
     const [newUser, setNewUser] = useState({
         name: "",
         email: "",
@@ -33,7 +33,7 @@ function SignUp(props) {
     };
 
     const handleSuccessfulAuth = (data) => {
-        handleLogin(data);
+        appProps.handleLogin(data);
         props.history.push("/dashboard");
     };
 
