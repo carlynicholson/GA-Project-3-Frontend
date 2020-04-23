@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body.about-team-body {
+    background-color: white;
+    margin-top: 25px;
+}
+
+h1.abouth1 {
+    color: #E56C4E;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+p.about-team {
+    color: #A9A9A9;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.member-photo {
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: flex-start;
+}
+
+h2.member-name {
+    color: #E56C4E;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+h3.member-title {
+    color: #A9A9A9;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+p.about-member {
+    color: #A9A9A9;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.social-links {
+    color: #353535;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.social-links:hover {
+    color: #E56C4E;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-links:visited {
+    color: #353535;
+    text-decoration: none;
+}
+
+.github, .github > a, .github:hover {
+    text-decoration: none;
+}
+
+.icon-social-github {
+    color: #353535;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.linkedin, .linkedin > a, .linkedin:hover {
+    text-decoration: none;
+}
+
+.icon-social-linkedin {
+    color: #353535;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.portfolio, .portfolio > a, .portfolio:hover {
+    text-decoration: none;
+}
+
+.icon-globe {
+    color: #353535;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+}

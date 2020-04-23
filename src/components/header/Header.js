@@ -11,8 +11,8 @@ function Header() {
             <Link to={'/'} style={{textDecoration: 'none'}}>
                 <div>Home</div>
             </Link>
-            <Link to={'/about'} style={{textDecoration: 'none'}}>
-                <div>About</div>
+            <Link to={'/our-team'} style={{textDecoration: 'none'}}>
+                <div>Our Team</div>
             </Link>
         </nav>
     );
