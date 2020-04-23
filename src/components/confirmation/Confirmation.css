@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
     background-image: url('../../assets/background.png');
     background-position: center;
@@ -11,38 +13,138 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    border: 4px solid blue;
 }
 
 .box {
-    border: 2px solid green;
     background: rgba(255, 255, 255, 0.9);
+    box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
     border-radius: 9px;
-    width: 50%;
     height: 100%;
-    margin-left: 30px;
+    width: 50%;
+    min-width: 250px;
+    /* max-width: 532px; */
+    padding: 20px 10px 20px 10px;
+    margin-top: 35px;
+}
+
+.box-info:hover {
+    cursor: default;
 }
 
 h1 {
     color: #E56C4E;
+    font-size: 28px;
+    font-weight: 650;
+    margin: 10px 0 10px 0;
 }
 
 h2 {
     color: #E56C4E;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
 }
 
 h3 {
     color: #E56C4E;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 10px 0;
 }
 
 p {
     color: #A9A9A9;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
 }
 
 .requested-service {
-    color: #A9A9A9
+    color: #A9A9A9;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
 }
 
 .date-time {
     color: #5E5D5D;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 6px 0 25px 0;
+}
+
+.calendar {
+    width: 35px;
+    height: 35px;
+    margin: 3px 0 13px 0;
+}
+
+@media (min-width: 1024px) {
+    .box {
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
+        border-radius: 9px;
+        height: 100%;
+        min-height: 400px;
+        width: 100%;
+        min-width: 250px;
+        max-width: 600px;
+        padding-top: 5%;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 5%;
+        margin-top: 35px;
+    }
+
+    .box-info {
+        margin: 0;
+    }
+
+    h1 {
+        color: #E56C4E;
+        font-size: 36px;
+        font-weight: 650;
+        margin: 10px 0 10px 0;
+    }
+    
+    h2 {
+        color: #E56C4E;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 10px 0 10px 0;
+    }
+    
+    h3 {
+        color: #E56C4E;
+        font-size: 28px;
+        font-weight: 600;
+        margin: 10px 0 10px 0;
+    }
+    
+    p {
+        color: #A9A9A9;
+        font-size: 26px;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+    }
+    
+    .requested-service {
+        color: #A9A9A9;
+        font-size: 23px;
+        font-weight: 400;
+        margin: 0 0 6px 0;
+    }
+    
+    .date-time {
+        color: #5E5D5D;
+        font-size: 23px;
+        font-weight: 700;
+        margin: 6px 0 25px 0;
+    }
+    
+    .calendar {
+        width: 50px;
+        height: 50px;
+        margin: 3px 0 13px 0;
+    }
 }
