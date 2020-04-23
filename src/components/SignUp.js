@@ -67,7 +67,7 @@ function SignUp(props) {
                             placeholder="ZIP CODE"
                             value={newUser.zip}
                             onChange={handleChange} required/>
-                        <div className="SignUp-Form-Button" type="submit">register</div>
+                        <button className="SignUp-Form-Button" type="submit">register</button>
                     </form>
                     <p>Already have an account? <Link to="/login">Login.</Link></p>
                 </div>

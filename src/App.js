@@ -19,8 +19,7 @@ function App() {
         date: date,
         time: appointmentTime,
         service: service,
-        // petId: appProps.loggedIn.user.petId
-        // comments:
+        petId: loggedIn.user.petId,
         user_id: loggedIn.user['_id'],
         provider_id: chosenProvider
     }
