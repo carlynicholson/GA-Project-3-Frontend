@@ -13,9 +13,14 @@ function About() {
             </div>
             <div className="team-members">
                 <div className="member-1">
+                    
+                    {/* ATTN: Please leave the commented-out image links as is for now.
+                    We'll need to get "headshots"/"profile photos" from the team for me to edit before 
+                    we can use those lines */}
+                    
                     {/* <img className="headshot" src={Calendar} alt='Scott'/> */}
                     <div className="member-photo"></div>
-                    <h2 className="member-name">Scott Beverly</h2>
+                    <h2 className="member-name">Scott</h2>
                     <h3 className="member-title">Title</h3>
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
@@ -34,7 +39,7 @@ function About() {
                 <div className="member-2">
                     {/* <img className="headshot" src={Calendar} alt='Gracie'/> */}
                     <div className="member-photo"></div>
-                    <h2 className="member-name">Gracie Everitt</h2>
+                    <h2 className="member-name">Gracie</h2>
                     <h3 className="member-title">Title</h3>
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
@@ -53,7 +58,7 @@ function About() {
                 <div className="member-3">
                     {/* <img className="headshot" src={Calendar} alt='Carly'/> */}
                     <div className="member-photo"></div>
-                    <h2 className="member-name">Carly Nicholson</h2>
+                    <h2 className="member-name">Carly</h2>
                     <h3 className="member-title">Full-Stack Developer</h3>
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
@@ -72,7 +77,7 @@ function About() {
                 <div className="member-4">
                     {/* <img className="headshot" src={Calendar} alt='Brandon'/> */}
                     <div className="member-photo"></div>
-                    <h2 className="member-name">Brandon Cantello</h2>
+                    <h2 className="member-name">Brandon</h2>
                     <h3 className="member-title">Title</h3>
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">

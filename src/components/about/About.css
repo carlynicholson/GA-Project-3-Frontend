@@ -5,6 +5,7 @@ body.about-team-body {
     margin-top: 25px;
 }
 
+/* 'OUR TEAM' INTRO */
 h1.abouth1 {
     color: #E56C4E;
     font-size: 28px;
@@ -19,6 +20,7 @@ p.about-team {
     margin-bottom: 25px;
 }
 
+/* TEAM MEMBER LIST CONTAINER */
 .team-members {
     display: flex;
     flex-direction: row;
@@ -27,6 +29,7 @@ p.about-team {
     padding-right: 15px;
 }
 
+/* TEAM MEMBER CONTENT ITEMS */
 .member-photo {
     border-radius: 50%;
     background-color: #A9A9A9;
@@ -80,6 +83,8 @@ p.about-member {
     color: #353535;
     text-decoration: none;
 }
+
+/* SOCIAL ICON INDIVIDUAL FORMATTING */
 
 .github, .github > a, .github:hover {
     text-decoration: none;
