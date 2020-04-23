@@ -9,7 +9,7 @@ function App() {
     const [appointmentTime, setAppointmentTime] = useState('10:00')
     const [localProviders, setLocalProviders] = useState([]);
     const [chosenProvider, setChosenProvider] = useState("");
-    const [newAppointment, setNewAppointment] = useState({});
+    const [newAppointment, setNewAppointment] = useState([]);
     console.log(newAppointment);
     const [loggedIn, setLoggedIn] = useState({
         loggedInStatus: "Not_Logged_In",
