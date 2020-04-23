@@ -14,10 +14,7 @@ function SignUp(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setNewUser({
-            ...newUser,
-            [e.target.name]: value
-        });
+        setNewUser({...newUser, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {

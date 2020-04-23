@@ -15,3 +15,7 @@ export const verifyUser = async (user) => {
 export const getProviderByZip = async (zip) => {
     return await api.get(`/providers/location/${zip}`);
 };
+
+export const createAppointment = async (appointment) => {
+    return await api.post('/appointments/', appointment);
+}

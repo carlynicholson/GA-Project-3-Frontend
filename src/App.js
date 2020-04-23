@@ -7,10 +7,23 @@ function App() {
     const [service, setService] = useState("");
     const [date, setDate] = useState(new Date());
     const [localProviders, setLocalProviders] = useState([]);
+    const [chosenProvider, setChosenProvider] = useState("");
+    const [newAppointment, setNewAppointment] = useState({});
+    console.log(newAppointment);
     const [loggedIn, setLoggedIn] = useState({
         loggedInStatus: "Not_Logged_In",
         user: {}
     });
+    const appointmentInfo = {
+        date: date,
+        // time: appProps.time,
+        service: service,
+        // petId: appProps.loggedIn.user.petId
+        // comments:
+        user_id: loggedIn.user['_id'],
+        provider_id: chosenProvider
+    }
+    console.log("This is APPOINTMENT INFO: ",appointmentInfo)
 
     const handleLogin = (data) => {
         console.log('App-handleLogin', data)
@@ -49,7 +62,12 @@ function App() {
                     date,
                     setDate,
                     loggedIn,
-                    localProviders
+                    localProviders,
+                    chosenProvider,
+                    setChosenProvider,
+                    newAppointment,
+                    setNewAppointment,
+                    appointmentInfo
                 }
             }>
                 <Main/>
