@@ -8,6 +8,7 @@ import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
 import Confirmation from './confirmation/Confirmation';
+import About from './about/About';
 
 export default function Main(props) {
     return (
@@ -21,6 +22,7 @@ export default function Main(props) {
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/calendar" component={CalendarApp} />
                 <Route exact path="/confirmation" component={Confirmation} />
+                <Route exact path="/our-team" component={About} />
                 <Redirect to='/login' />
             </Switch>
             <Footer/>
