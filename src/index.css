@@ -18,3 +18,7 @@ footer {
   font-size: 14px;
   margin-top: 50px;
 }
+
+footer:hover {
+  cursor: default;
+}
