@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 function CalendarApp() {
 	const appProps = useContext(AppContext)
 	console.log(appProps.date);
+	console.log(appProps.localProviders);
 
 	return (
 		<div>

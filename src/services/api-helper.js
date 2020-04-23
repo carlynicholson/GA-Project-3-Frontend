@@ -13,5 +13,5 @@ export const verifyUser = async (user) => {
 };
 
 export const getProviderByZip = async (zip) => {
-    return await api.get(`/providers/${zip}`);
+    return await api.get(`/providers/location/${zip}`);
 };

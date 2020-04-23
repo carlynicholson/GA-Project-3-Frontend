@@ -7,6 +7,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
+import Providers from "./booking/providers/providers";
 
 export default function Main(props) {
     return (
@@ -19,6 +20,7 @@ export default function Main(props) {
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/services" component={Services}/>
                 <Route path="/calendar" component={CalendarApp}/>
+                <Route path={"/localproviders"} component={Providers}/>
                 {/*<Redirect to={'/login'}/>*/}
             </Switch>
             <Footer/>
