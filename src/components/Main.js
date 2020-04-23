@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Login from './Login'
-import SignUp from './SignUp'
-// import Dashboard from './dashboard/Dashboard'
-import Header from './header/Header'
+import Login from './authentication/Login'
+import SignUp from './authentication/SignUp'
+import Dashboard from './Dashboard'
+import Header from './Header'
 import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";

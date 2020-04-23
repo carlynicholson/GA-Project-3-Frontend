@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react'
-import {verifyUser} from '../services/api-loginHelper'
-import {AppContext} from '../App.js'
+import {verifyUser} from '../../services/api-loginHelper'
+import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
