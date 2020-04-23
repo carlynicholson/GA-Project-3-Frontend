@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
 function SignUp(props) {
-    const handleLogin = useContext(AppContext)
+    const appProps = useContext(AppContext)
     const [newUser, setNewUser] = useState({
         name: "",
         email: "",
@@ -33,7 +33,7 @@ function SignUp(props) {
     };
 
     const handleSuccessfulAuth = (data) => {
-        handleLogin(data);
+        appProps.handleLogin(data);
         props.history.push("/dashboard");
     };
 
@@ -68,7 +68,7 @@ function SignUp(props) {
                             placeholder="ZIP CODE"
                             value={newUser.zip}
                             onChange={handleChange} required/>
-                        <div className="SignUp-Form-Button" type="submit">register</div>
+                        <button className="SignUp-Form-Button" type="submit">register</button>
                     </form>
                     <p>Already have an account? <Link to="/login">Login.</Link></p>
                 </div>
