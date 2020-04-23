@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+/* PAGE//BACKGROUND FORMATTING */
 .conf-body {
     background-image: url('../../assets/background.png');
     background-position: center;
@@ -15,6 +16,7 @@
     align-items: center;
 }
 
+/* CONFIRMATION BOX */
 .conf-box {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
@@ -27,6 +29,7 @@
     margin-top: 35px;
 }
 
+/* STATIC BOX CONTENT */
 .conf-box-info:hover {
     cursor: default;
 }
@@ -59,6 +62,7 @@ p.conf-par {
     margin: 10px 0 0 0;
 }
 
+/* PASSED SERVICE DATA */
 .requested-service {
     color: #A9A9A9;
     font-size: 15px;
