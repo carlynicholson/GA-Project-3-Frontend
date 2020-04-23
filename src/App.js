@@ -6,6 +6,7 @@ import {getProviderByZip} from "./services/api-helper";
 function App() {
     const [service, setService] = useState("");
     const [date, setDate] = useState(new Date());
+    const [appointmentTime, setAppointmentTime] = useState('10:00')
     const [localProviders, setLocalProviders] = useState([]);
     const [chosenProvider, setChosenProvider] = useState("");
     const [newAppointment, setNewAppointment] = useState({});
@@ -16,7 +17,7 @@ function App() {
     });
     const appointmentInfo = {
         date: date,
-        // time: appProps.time,
+        time: appointmentTime,
         service: service,
         // petId: appProps.loggedIn.user.petId
         // comments:
@@ -50,6 +51,7 @@ function App() {
     console.log(localProviders);
 
     const onDateClick = date => setDate(date);
+    const onTimeChange = time => setAppointmentTime(time)
 
     return (
         <div className="App">
@@ -58,17 +60,20 @@ function App() {
                     handleLogin,
                     handleServiceClick,
                     onDateClick,
+                    onTimeChange,
                     setService,
                     service,
                     date,
                     setDate,
+                    appointmentTime,
+                    setAppointmentTime,
                     loggedIn,
                     localProviders,
                     chosenProvider,
                     setChosenProvider,
                     newAppointment,
                     setNewAppointment,
-                    appointmentInfo
+                    appointmentInfo,
                 }
             }>
                 <Main/>
