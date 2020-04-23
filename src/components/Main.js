@@ -3,7 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Login from './authentication/Login'
 import SignUp from './authentication/SignUp'
 import Dashboard from './Dashboard'
-import Header from './Header'
+import Header from './header/Header'
 import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
