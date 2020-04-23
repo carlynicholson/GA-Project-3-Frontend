@@ -9,7 +9,6 @@ function CalendarApp() {
 	const appProps = useContext(AppContext)
 	return (
 		<div>
-			<img src={logo} alt={'logo'}/>
 			<h2>{appProps.service}</h2>
 			<h3>Select a date/time.</h3>
 			<div id={'calendar-container'}>
