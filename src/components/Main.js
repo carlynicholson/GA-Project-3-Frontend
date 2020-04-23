@@ -9,6 +9,7 @@ import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
 import Confirmation from './confirmation/Confirmation';
 import About from './about/About';
+import Providers from "./booking/providers/providers";
 
 
 export default function Main(props) {
@@ -22,6 +23,7 @@ export default function Main(props) {
                 <Route path="/signup" component={SignUp}/>
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/calendar" component={CalendarApp} />
+                <Route exact path="/localproviders" component={Providers}/>
                 <Route exact path="/confirmation" component={Confirmation} />
                 <Route exact path="/our-team" component={About} />
                 <Redirect to='/login' />

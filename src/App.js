@@ -21,18 +21,16 @@ function App() {
         service: service,
         petId: loggedIn.user.petId,
         user_id: loggedIn.user['_id'],
-        provider_id: chosenProvider
+        // provider_id: chosenProvider
     }
     console.log("This is APPOINTMENT INFO: ",appointmentInfo)
 
     const handleLogin = (data) => {
-        console.log('App-handleLogin', data)
         setLoggedIn({
             loggedInStatus: "Logged_In",
             user: data
         })
     };
-    console.log("IM LOGGED IN!!! ", loggedIn);
 
     const handleServiceClick = async(service) => {
         setService(service);
@@ -47,7 +45,6 @@ function App() {
             return ("registration error" + error);
         });
     };
-    console.log(localProviders);
 
     const onDateClick = date => setDate(date);
     const onTimeChange = time => setAppointmentTime(time)

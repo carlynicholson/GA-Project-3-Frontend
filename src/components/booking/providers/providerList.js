@@ -15,7 +15,6 @@ export default function ProvidersList() {
 		});
 	}
 	localServiceProvidersArr();
-	console.log(providerArr);
 
 	for (let i = 0; i < providerArr.length; i++) {
 		let tempArray = providerArr[i];

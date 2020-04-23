@@ -9,7 +9,7 @@ function Confirmation() {
     const appProp = useContext(AppContext)
     
     return(
-        <body className="conf-body">
+        <div className="conf-body">
             <div className="conf-page">
                 <div className="conf-box">
                     <div className="conf-box-info">
@@ -28,7 +28,7 @@ function Confirmation() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
 

@@ -32,7 +32,7 @@ function Login(props) {
 
     const handleSuccessfulAuth = (data) => {
         appProps.handleLogin(data);
-        props.history.push("/dashboard");
+        props.history.push("/services");
     };
 
     return (
