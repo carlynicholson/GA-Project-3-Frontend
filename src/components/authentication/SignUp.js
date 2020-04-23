@@ -1,6 +1,6 @@
 import React, {useState, useContext} from 'react'
-import {createUser} from '../services/api-loginHelper'
-import {AppContext} from '../App.js'
+import {createUser} from '../../services/api-loginHelper'
+import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
