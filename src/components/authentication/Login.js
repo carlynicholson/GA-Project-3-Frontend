@@ -1,11 +1,12 @@
 import React, {useState, useContext} from 'react'
-import {verifyUser} from '../services/api-helper'
-import {AppContext} from '../App.js'
+import {verifyUser} from '../../services/api-helper'
+import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
 function Login(props) {
-    const appContext = useContext(AppContext)
+    const appProps = useContext(AppContext)
+
     const [User, setUser] = useState({
         email: "",
         password: "",
@@ -30,7 +31,7 @@ function Login(props) {
     };
 
     const handleSuccessfulAuth = (data) => {
-        appContext.handleLogin(data);
+        appProps.handleLogin(data);
         props.history.push("/dashboard");
     };
 

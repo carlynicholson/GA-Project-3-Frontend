@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body {
+.conf-body {
     background-image: url('../../assets/background.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -8,14 +8,14 @@ body {
     background-size: cover;
 }
 
-.page {
+.conf-page {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-.box {
+.conf-box {
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
     border-radius: 9px;
@@ -27,32 +27,32 @@ body {
     margin-top: 35px;
 }
 
-.box-info:hover {
+.conf-box-info:hover {
     cursor: default;
 }
 
-h1 {
+h1.conf-h1 {
     color: #E56C4E;
     font-size: 28px;
     font-weight: 650;
     margin: 10px 0 10px 0;
 }
 
-h2 {
+h2.conf-h2 {
     color: #E56C4E;
     font-size: 26px;
     font-weight: 600;
     margin: 10px 0 10px 0;
 }
 
-h3 {
+h3.conf-h3 {
     color: #E56C4E;
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0 10px 0;
 }
 
-p {
+p.conf-par {
     color: #A9A9A9;
     font-size: 18px;
     font-weight: 400;
@@ -73,14 +73,14 @@ p {
     margin: 6px 0 25px 0;
 }
 
-.calendar {
+.conf-cal {
     width: 35px;
     height: 35px;
     margin: 3px 0 13px 0;
 }
 
 @media (min-width: 1024px) {
-    .box {
+    .conf-box {
         background: rgba(255, 255, 255, 0.9);
         box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
         border-radius: 9px;
@@ -96,32 +96,32 @@ p {
         margin-top: 35px;
     }
 
-    .box-info {
+    .conf-box-info {
         margin: 0;
     }
 
-    h1 {
+    h1.conf-h1 {
         color: #E56C4E;
         font-size: 36px;
         font-weight: 650;
         margin: 10px 0 10px 0;
     }
     
-    h2 {
+    h2.conf-h2 {
         color: #E56C4E;
         font-size: 32px;
         font-weight: 600;
         margin: 10px 0 10px 0;
     }
     
-    h3 {
+    h3.conf-h3 {
         color: #E56C4E;
         font-size: 28px;
         font-weight: 600;
         margin: 10px 0 10px 0;
     }
     
-    p {
+    p.conf-par {
         color: #A9A9A9;
         font-size: 26px;
         font-weight: 400;
@@ -142,7 +142,7 @@ p {
         margin: 6px 0 25px 0;
     }
     
-    .calendar {
+    .conf-cal {
         width: 50px;
         height: 50px;
         margin: 3px 0 13px 0;

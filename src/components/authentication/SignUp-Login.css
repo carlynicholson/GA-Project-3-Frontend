@@ -9,7 +9,7 @@ nav, footer {
 }
 
 body {
-    background-image: url("../assets/background.png");
+    background-image: url("../../assets/background.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
 }
 
 .Login-Image {
-    background: url("../assets/logo-white.png");
+    background: url("../../assets/logo-white.png");
     position: absolute;
     height: 30px;
     left: 10px;
@@ -94,7 +94,7 @@ a:hover {
 
 @media(min-width: 375px) {
     .Login-Image {
-        background: url("../assets/logo-white.png");
+        background: url("../../assets/logo-white.png");
         position: absolute;
         height: 40px;
         left: 10px;
@@ -117,7 +117,7 @@ a:hover {
 
 @media(min-width: 425px) {
     .Login-Image{
-        background: url("../assets/logo-white.png");
+        background: url("../../assets/logo-white.png");
         position: absolute;
         height: 40px;
         left: 20px;
@@ -136,7 +136,7 @@ a:hover {
 
 @media(min-width: 768px) {
     .Login-Image {
-        background: url("../assets/logo-white.png");
+        background: url("../../assets/logo-white.png");
         position: absolute;
         height: 50px;
         left: 50px;
@@ -155,7 +155,7 @@ a:hover {
 
 @media(min-width: 1024px) {
     .Login-Image {
-        background: url("../assets/logo-white.png");
+        background: url("../../assets/logo-white.png");
         position: absolute;
         height: 60px;
         left: 60px;
@@ -186,7 +186,7 @@ a:hover {
 
 @media(min-width: 1440px) {
     .Login-Image {
-        background: url("../assets/logo-white.png");
+        background: url("../../assets/logo-white.png");
         position: absolute;
         height: 70px;
         left: 80px;

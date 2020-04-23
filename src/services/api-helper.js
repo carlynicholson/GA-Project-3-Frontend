@@ -1,7 +1,13 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: "https://fetch-app-heroku.herokuapp.com/"
+    baseURL: "https://fetch-app-heroku.herokuapp.com/",
+    headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+    },
+    // withCredentials: true,
+    // credentials: 'same-origin'
 });
 
 export const createUser = async (user) => {
@@ -17,5 +23,5 @@ export const getProviderByZip = async (zip) => {
 };
 
 export const createAppointment = async (appointment) => {
-    return await api.post('/appointments/', appointment);
+    return await api.post('/appointments', appointment);
 }
