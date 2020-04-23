@@ -32,6 +32,7 @@ function App() {
             user: data
         })
     };
+    console.log("IM LOGGED IN!!! ", loggedIn);
 
     const handleServiceClick = async(service) => {
         setService(service);
