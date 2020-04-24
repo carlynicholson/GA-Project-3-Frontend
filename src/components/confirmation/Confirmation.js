@@ -9,7 +9,9 @@ import Calendar from '../../assets/conf-cal.png';
 
 function Confirmation() {
     const appProp = useContext(AppContext)
-    
+    const propsDate = appProp.date
+    const date = (new Date(propsDate)).toString()
+
     return(
 
         <div className="conf-body">
@@ -25,8 +27,8 @@ function Confirmation() {
                         <p className="conf-par">We will text you when we confirm your provider.</p>
                         <div className="conf-info">
                             <img className="conf-cal" src={Calendar} alt='Request Details'/>
-                            <p className="requested-service">Requested date and time for a {appProp.service}</p>
-                            <p className="date-time" value={appProp.date}> at {appProp.appointmentTime}</p>
+                            <p className="requested-service">Requested date and time:</p>
+                            <p className="date-time"> {date} at {appProp.appointmentTime}</p>
                         </div>
                         <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
                             <h3 className="conf-h3">Back to Home Page</h3>
