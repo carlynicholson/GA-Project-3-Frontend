@@ -14,6 +14,16 @@
     min-width: 320px;
 }
 
+#pet-wrapper {
+    background-image: url("../../assets/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #e56c4e;
+    min-width: 320px;
+}
+
 .Login-Image {
     background: url("../../assets/logo-white.png");
     position: absolute;
@@ -37,6 +47,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 60px;
+}
+
+#pet-confirm-wrapper {
+    background-image: url("../../assets/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #e56c4e;
+    min-width: 320px;
+    height: 100vh;
 }
 
 .Login, .SignUp, .All-Pets-Container, .Profile {
@@ -175,11 +197,11 @@
 .Pet-Button {
     color:#ffffff;
     font-family: Roboto;
-    border: none;
-    border-radius: 1px;
+    border: solid 1px #a9a9a9;
+    border-radius: 10px;
     font-weight: 700;
     width: 20%;
-    margin: 20px 0 8px 0;
+    margin: 20px 5px 28px 5px;
     background-color: #e56c4e;
     padding: 10px 15px;
     text-align: center;

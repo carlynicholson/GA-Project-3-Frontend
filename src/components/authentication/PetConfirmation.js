@@ -2,6 +2,7 @@ import React, {useState, useContext, useEffect} from 'react'
 import {getAllPets} from '../../services/api-loginHelper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
+import Header from "../header/Header";
 
 function PetConfirmation(props) {
     const appProps = useContext(AppContext)
@@ -41,7 +42,8 @@ function PetConfirmation(props) {
     };
     
     return (
-        <>
+        <div id={'pet-confirm-wrapper'}>
+            <Header/>
             <div className="Pet-Confirmation">
                 <div className="All-Pets-Container">
                     <h1>{user.name}'s Pets</h1>
@@ -52,7 +54,7 @@ function PetConfirmation(props) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

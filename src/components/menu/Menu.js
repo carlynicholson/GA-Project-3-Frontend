@@ -42,7 +42,7 @@ render () {
                 <div className="menu-home">Home</div>
             </Link>
 
-            <Link to={'/add-pet'} style={{textDecoration: 'none'}}>
+            <Link to={'/addpet'} style={{textDecoration: 'none'}}>
                 <img className="user-pets" src={Paw} alt='Pets'/>
                 <div className="menu-pets">Pets</div>
             </Link>
