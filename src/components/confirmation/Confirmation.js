@@ -9,7 +9,8 @@ function Confirmation() {
     const appProp = useContext(AppContext)
     
     return(
-        <body className="conf-body">
+        <>
+        <div className="conf-body">
         <div className="conf-page">
             <div className="conf-box">
                 <div className="conf-box-info">
@@ -20,7 +21,7 @@ function Confirmation() {
                 <div className="conf-info">
                     <img className="conf-cal" src={Calendar} alt='Request Details'/>
                     <p className="requested-service">Requested date and time for a {appProp.service}</p>
-                    <p className="date-time" value={appProp.date}> at 10:30 AM</p>
+                    <p className="date-time" value={appProp.date}> at {appProp.appointmentTime}</p>
                 </div>
                 <Link to={'/'} style={{textDecoration: 'none'}}>
                 <h3 className="conf-h3">Back to Home Page</h3>
@@ -28,7 +29,8 @@ function Confirmation() {
                 </div>
             </div>
         </div>
-        </body>
+        </div>
+        </>
     )
 }
 

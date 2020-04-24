@@ -39,6 +39,7 @@ function SignUp(props) {
 
     return (
         <>
+        <div className="auth-body">
             <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
             <div className="Login-Container">
                 <div className="SignUp">
@@ -70,9 +71,10 @@ function SignUp(props) {
                             onChange={handleChange} required/>
                         <button className="SignUp-Form-Button" type="submit">register</button>
                     </form>
-                    <p>Already have an account? <Link to="/login">Login.</Link></p>
+                    <p className="login-prompt">Already have an account? <Link to="/login">Log in!</Link></p>
                 </div>
             </div>
+        </div>
         </>
     );
 }
