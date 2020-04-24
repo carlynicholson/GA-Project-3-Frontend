@@ -66,16 +66,16 @@
 
 @media (min-width: 1023px) {
     #provider-service-title {
-        font-size: 3em;
+        font-size: 4em;
         margin-top: 1em;
     }
 
     #provider-sub-heading {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     #providers-container {
-        max-width: 70vw;
+        max-width: 65vw;
         margin: 0 auto;
     }
 
