@@ -26,6 +26,6 @@ export default function ProvidersList() {
 		});
 
 	return (
-		<div>{providerArray}</div>
+		<div id={'providers-container'}>{providerArray}</div>
 	);
 };
