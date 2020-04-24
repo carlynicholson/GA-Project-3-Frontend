@@ -15,7 +15,6 @@ import Providers from "./booking/providers/providers";
 export default function Main() {
     return (
         <>
-            <Header/>
             <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/login" component={Login} />
@@ -28,7 +27,6 @@ export default function Main() {
                 <Route exact path="/our-team" component={About} />
                 <Redirect to='/login' />
             </Switch>
-            <Footer/>
         </>
     );
 };
