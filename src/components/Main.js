@@ -19,7 +19,7 @@ export default function Main(props) {
             <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/login" component={Login} />
-                {/* <Route path="/dashboard" component={Dashboard} /> */}
+                <Route path="/dashboard" component={Dashboard} />
                 <Route path="/signup" component={SignUp}/>
                 <Route exact path="/services" component={Services} />
                 <Route exact path="/calendar" component={CalendarApp} />
