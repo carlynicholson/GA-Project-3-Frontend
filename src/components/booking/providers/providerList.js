@@ -5,10 +5,11 @@ import {AppContext} from "../../../App";
 export default function ProvidersList() {
 	const appContext = useContext(AppContext);
 	const providerArr = [];
+	const requestedService = appContext.service.toLowerCase();
 
 	function localServiceProvidersArr() {
 		appContext.localProviders[0].forEach(provider => {
-			if (provider.services[0].walk === true) {
+			if (provider.services[0][requestedService] === true) {
 				providerArr.push(provider);
 			}
 		});

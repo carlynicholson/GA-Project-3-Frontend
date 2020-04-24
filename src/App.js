@@ -34,7 +34,7 @@ function App() {
 
     const handleServiceClick = async(service) => {
         setService(service);
-        const json = await getProviderByZip(94120).then((response) => {
+        const json = await getProviderByZip(loggedIn.user.zip).then((response) => {
             if (response.status === 200) {
                 console.log(response.data);
                 setLocalProviders([...localProviders, response.data]);

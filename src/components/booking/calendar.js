@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Calendar from 'react-calendar';
 import TimePicker from 'react-time-picker';
-import logo from '../../assets/logo-color.png';
 import {AppContext} from "../../App";
 import {Link} from "react-router-dom";
 

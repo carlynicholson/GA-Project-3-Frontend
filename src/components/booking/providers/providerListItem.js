@@ -8,9 +8,9 @@ function ProvidersListItem(props) {
 	const appProps = useContext(AppContext);
 
 	const handleBookClick = async(e) => {
+		e.preventDefault();
 		let book = props.element['_id'];
 		appProps.setChosenProvider(book);
-		e.preventDefault();
 		const json = await createAppointment(appProps.appointmentInfo).then((response) => {
 			console.log("APPOINTMENT INFO FROM PROVIDER ",appProps.appointmentInfo)
 			console.log("POST RESPONSE: ", response);

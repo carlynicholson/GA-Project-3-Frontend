@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import walkIcon from '../../assets/walk.png';
 import groomIcon from '../../assets/groom.png';
 import overnightIcon from '../../assets/overnight.png';
-import logo from '../../assets/logo-color.png';
 import {AppContext} from "../../App";
 import {Link} from "react-router-dom";
 
