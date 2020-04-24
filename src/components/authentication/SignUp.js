@@ -1,11 +1,11 @@
 import React, {useState, useContext} from 'react'
-import {createUser} from '../services/api-loginHelper'
-import {AppContext} from '../App.js'
+import {createUser} from '../../services/api-loginHelper'
+import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
 import './SignUp-Login.css'
 
 function SignUp(props) {
-    const handleLogin = useContext(AppContext)
+    const appProps = useContext(AppContext)
     const [newUser, setNewUser] = useState({
         name: "",
         email: "",
@@ -33,12 +33,13 @@ function SignUp(props) {
     };
 
     const handleSuccessfulAuth = (data) => {
-        handleLogin(data);
+        appProps.handleLogin(data);
         props.history.push("/dashboard");
     };
 
     return (
         <>
+        <div className="auth-body">
             <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
             <div className="Login-Container">
                 <div className="SignUp">
@@ -68,11 +69,12 @@ function SignUp(props) {
                             placeholder="ZIP CODE"
                             value={newUser.zip}
                             onChange={handleChange} required/>
-                        <div className="SignUp-Form-Button" type="submit">register</div>
+                        <button className="SignUp-Form-Button" type="submit">register</button>
                     </form>
-                    <p>Already have an account? <Link to="/login">Login.</Link></p>
+                    <p className="login-prompt">Already have an account? <Link to="/login">Log in!</Link></p>
                 </div>
             </div>
+        </div>
         </>
     );
 }

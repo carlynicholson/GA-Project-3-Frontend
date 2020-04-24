@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav, footer {
+    display: none;
+}
+
+.auth-body {
+    background-image: url("../../assets/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;       
+    background-color: #e56c4e;
+    min-width: 320px;
+}
+
+.Login-Image {
+    background: url("../../assets/logo-white.png");
+    position: absolute;
+    height: 30px;
+    left: 10px;
+    top: 20px;   
+}
+
+.Login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.Login, .SignUp {
+    width: 85%;
+    font-family: Roboto;
+    background: rgba(249, 247, 247, 0.9);
+    box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
+    border-radius: 9px;
+    text-align: center;
+}
+
+.User-Login, .Create-Account {
+    color: #5E5D5D;
+    padding: 30px;
+    font-size: 1.7em;
+}
+
+.Login-Form, .SignUp-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Login-Form-Input {
+    font-weight: 400;
+    font-family: Roboto;
+    color: #6A6A6A;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: #ffffff;   
+}
+
+.SignUp-Form-Input {
+    font-weight: 400;
+    font-family: Roboto;
+    color: #6A6A6A;
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: #ffffff;   
+}
+
+/* PSA: If you decide to touch the button CSS, or even think about just breathing near it... 
+pls reconsider. I am so tired. */
+
+.SignUp-Form-Button {
+    color:#ffffff;
+    border: none;
+    border-radius: 1px;
+    width: 20%;
+    margin: 20px 0 8px 0;
+    background-color: #e56c4e;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5px #e56c4e;
+    letter-spacing: 1.4px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.Login-Form-Button {
+    color:#ffffff;
+    border: none;
+    border-radius: 1px;
+    width: 20%;
+    margin: 20px 0 8px 0;
+    background-color: #e56c4e;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5px #e56c4e;
+    letter-spacing: 1.4px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.Login-Form-Button:hover, .SignUp-Form-Button:hover {
+      cursor: pointer;
+      opacity: 90%;
+}
+
+p.login-prompt {
+    color: #5E5D5D;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    font-family: Roboto;
+    font-size: .9em;
+    text-decoration:none;
+}
+
+p.login-prompt > a, p.login-prompt > a:visited {
+    text-decoration:none;
+    color: #5E5D5D;
+}
+
+p.login-prompt > a:hover {
+    color: #e56c4e;
+    text-decoration: underline;
+    text-decoration-color: #e56c4e;
+}
+
+/* .SignUp p, .SignUp a {
+    color: #353535;
+    margin-top: 0;
+    padding-bottom: 14px;
+    font-family: Roboto;
+    font-size: .9em;
+    text-decoration:none;
+} */
+
+
+/* a:visited {
+    color: #353535;
+    text-decoration: none;
+} */
+
+@media(min-width: 375px) {
+    .Login-Image {
+        background: url("../../assets/logo-white.png");
+        position: absolute;
+        height: 40px;
+        left: 10px;
+        top: 20px;   
+    }
+
+    .User-Login, .Create-Account {
+        padding: 40px;
+        font-size: 1.5em;
+    }
+
+    .Login-Form-Input, .SignUp-Form-Input {
+        width: 75%;
+    }
+
+    /* .Login p, .Login a, .SignUp p, .SignUp a {
+        font-size: .9em;
+    } */
+}
+
+@media(min-width: 425px) {
+    .Login-Image{
+        background: url("../../assets/logo-white.png");
+        position: absolute;
+        height: 40px;
+        left: 20px;
+        top: 20px;   
+    }
+
+    .User-Login, .Create-Account {
+        padding: 30px;  
+        font-size: 1.3em;      
+    } 
+
+    /* .Login p, .Login a, .SignUp p, .SignUp a {
+        font-size: .7em;
+    } */
+}
+
+@media(min-width: 768px) {
+    .Login-Image {
+        background: url("../../assets/logo-white.png");
+        position: absolute;
+        height: 50px;
+        left: 50px;
+        top: 50px;       
+    }
+
+    .Login, .SignUp {
+        width: 50%;
+    }
+
+    .User-Login, .Create-Account {
+        padding: 30px;  
+        font-size: 1.5em;      
+    }    
+}
+
+@media(min-width: 1024px) {
+    .Login-Image {
+        background: url("../../assets/logo-white.png");
+        position: absolute;
+        height: 60px;
+        left: 60px;
+        top: 50px;   
+    }
+}
+
+.User-Login, .Create-Account {
+    font-size: 2em;
+}
+
+.Login-Form-Input, .SignUp-Form-Input {
+    font-weight: 400;
+    font-size: .9em;   
+}
+
+.Login-Form-Button, .SignUp-Form-Button {
+    color:#ffffff;
+    border: none;
+    border-radius: 1px;
+    width: 120px;
+    margin: 20px 0 8px 0;
+    background-color: #e56c4e;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    -webkit-text-stroke: 0.5px #e56c4e;
+    letter-spacing: 1.4px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+/* .Login p, .Login a, .SignUp p, .SignUp a {
+    font-size: 1em;
+    text-decoration:none;
+} */
+
+@media(min-width: 1440px) {
+    .Login-Image {
+        background: url("../../assets/logo-white.png");
+        position: absolute;
+        height: 70px;
+        left: 80px;
+        top: 60px;   
+    }
+}

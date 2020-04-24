@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body.about-team-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-team-body {
     background-color: white;
     margin-top: 25px;
 }
@@ -29,6 +35,39 @@ p.about-team {
     padding-right: 15px;
 }
 
+/* INDIVIDUAL TEAM MEMBERS */
+.member-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.member-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.member-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.member-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
 /* TEAM MEMBER CONTENT ITEMS */
 .member-photo {
     border-radius: 50%;
@@ -36,8 +75,13 @@ p.about-team {
     width: 55px;
     height: 55px;
     margin-top: 10px;
+    margin-right: 13px;
     margin-bottom: 10px;
-    justify-self: flex-start;
+    margin-left: 0;
+}
+
+.member-content {
+    display: inline;
 }
 
 h2.member-name {
@@ -45,7 +89,8 @@ h2.member-name {
     font-size: 20px;
     font-weight: 600;
     text-align: left;
-    margin-bottom: 8px;
+    padding-top: 4px;
+    margin-bottom: 4px;
 }
 
 h3.member-title {
@@ -60,7 +105,8 @@ h3.member-title {
 p.about-member {
     color: #A9A9A9;
     text-align: left;
-    margin-bottom: 13px;
+    margin-top: 4px;
+    margin-bottom: 18px;
 }
 
 .social-links {
@@ -93,8 +139,8 @@ p.about-member {
 .icon-social-github {
     color: #353535;
     text-decoration: none;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
 .linkedin, .linkedin > a, .linkedin:hover {
@@ -104,8 +150,8 @@ p.about-member {
 .icon-social-linkedin {
     color: #353535;
     text-decoration: none;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
 .portfolio, .portfolio > a, .portfolio:hover {
@@ -115,6 +161,6 @@ p.about-member {
 .icon-globe {
     color: #353535;
     text-decoration: none;
-    margin-left: 4px;
-    margin-right: 4px;
+    margin-left: 9px;
+    margin-right: 9px;
 }
