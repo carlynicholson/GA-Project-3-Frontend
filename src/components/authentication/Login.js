@@ -35,6 +35,8 @@ function Login(props) {
         props.history.push("/dashboard");
     };
 
+    
+
     return (
         <>
         <div className="auth-body">

@@ -14,6 +14,7 @@ function App() {
         loggedInStatus: "Not_Logged_In",
         user: {}
     });
+    const [pets, setPets] = useState([])
     const appointmentInfo = {
         date: date,
         time: appointmentTime,
@@ -69,6 +70,8 @@ function App() {
                     newAppointment,
                     setNewAppointment,
                     appointmentInfo,
+                    pets, 
+                    setPets
                 }
             }>
                 <Main/>
