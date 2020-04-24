@@ -4,7 +4,8 @@ import './Header.css';
 
 function Header() {
     return (
-        <nav>
+        <>
+        <nav className="header-nav">
             <Link to={'/'} style={{textDecoration: 'none'}}>
                 <div><span id={'logo'}>Fetch</span></div>
             </Link>
@@ -15,6 +16,7 @@ function Header() {
                 <div>Our Team</div>
             </Link>
         </nav>
+        </>
     );
 }
 

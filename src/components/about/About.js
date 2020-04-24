@@ -6,7 +6,7 @@ import './About.css';
 function About() {
     
     return(
-        <body className="about-team-body">
+        <div className="about-team-body">
             <div className="about-intro">
                 <h1 className="abouth1">Our Team</h1>
                 <p className="about-team">Meet the team behind Fetch!</p>
@@ -101,7 +101,7 @@ function About() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     )
 }
 
