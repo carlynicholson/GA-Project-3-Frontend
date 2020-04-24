@@ -31,6 +31,7 @@ function ProvidersListItem(props) {
 		<div className={'provider-item'}>
 			<div className={'provider-img-name-container'}>
 				<div className={'provider-image'}><img
+					className="provider-photo"
 					src={props.element.img}
 					alt={'provider'}/></div>
 				<div className={'provider-name'}>{props.element.name}</div>
