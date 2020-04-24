@@ -6,23 +6,22 @@
 }
 
 #calendar-wrapper {
-    background-image: url('../../assets/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
     height: 100vh;
 }
 
 
 #cal-service-title {
     color: #E56C4E;
-    margin: 2em 0 .25em 0;
+    font-size: 28px;
+    font-weight: 650;
+    margin: 1.5em 0 .25em 0;
 }
 
 #cal-sub-heading {
     color: #A9A9A9;
-    margin-bottom: 2em;
+    font-size: 20px;
+    margin-bottom: 1.75em;
 }
 
 #calendar-container {
@@ -41,16 +40,37 @@
 }
 
 .react-calendar__navigation__label {
-    color: #29928e;
+    color: #E56C4E;
     font-size: 1em;
 }
 
+.react-calendar__month-view__weekdays__weekday {
+    text-decoration: none;
+    border: none;
+    cursor: default;
+}
+
+.react-calendar__tile--active {
+    background: #A9A9A9;
+    color: #353535;
+}
+
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: #A9A9A9;
+    color: #353535;
+}
+
+.react-calendar__tile--now {
+    background: #E56C4E;
+    color: white;
+}
+
 #cal-button {
-    width: 65vw;
-    height: 40px;
-    font-size: 1.5em;
+    width: 45vw;
+    height: 45px;
+    font-size: 1.15em;
     font-weight: bold;
-    margin-top: 2em;
+    margin-top: 1.75em;
     border: solid 1px white;
     border-radius: 10px;
     background-color: #E56C4E;
@@ -59,11 +79,12 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #cal-service-title {
-        font-size: 3em;
+        font-size: 2em;
+        font-weight: 650;
     }
 
     #cal-sub-heading {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
     .react-calendar {
@@ -76,21 +97,27 @@
     }
 
     #cal-button {
-        width: 350px;
-        height: 60px;
-        font-size: 2em;
-        margin-top: 3em;
+        width: 30vw;
+        height: 50px;
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        border: solid 1px #E56C4E;
+        border-radius: 10px;
+        background-color: #E56C4E;
+        color: white;
     }
 }
 
 @media (min-width: 1023px) {
     #cal-service-title {
-        font-size: 4em;
+        font-size: 2em;
         margin-top: 1.5em;
     }
 
     #cal-sub-heading {
-        font-size: 3em;
+        font-size: 1.75em;
         margin-bottom: .5em;
     }
 
@@ -104,9 +131,9 @@
     }
 
     #cal-button {
-        width: 350px;
+        width: 300px;
         height: 60px;
-        font-size: 2em;
+        font-size: 1.7em;
         margin-top: 3em;
     }
 

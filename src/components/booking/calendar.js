@@ -4,6 +4,7 @@ import TimePicker from 'react-time-picker';
 import {AppContext} from "../../App";
 import {Link} from "react-router-dom";
 import Header from "../header/Header";
+import Footer from '../Footer';
 import './Calendar.css';
 import 'react-calendar/dist/Calendar.css';
 
@@ -29,6 +30,7 @@ function CalendarApp() {
 			<Link to={'/localproviders'}>
 				<button id={'cal-button'}>CONTINUE</button>
 			</Link>
+			<Footer />
 		</div>
 	);
 }

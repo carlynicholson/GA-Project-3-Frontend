@@ -17,11 +17,7 @@ Link p {
 }
 
 #dash-service-container {
-    background-image: url('../../assets/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
     height: 100vh;
 }
 
