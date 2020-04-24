@@ -38,7 +38,7 @@ function About() {
                             <a href="/" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
                         </div>
                         <div className="portfolio">
-                            <a href="/" title="Portfolio"><i class="icon-globe"></i></a>
+                            <a href="/" title="Portfolio"><i className="icon-globe"></i></a>
                         </div>
                     </div>
                 </div>
