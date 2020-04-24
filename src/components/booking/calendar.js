@@ -10,7 +10,7 @@ import 'react-calendar/dist/Calendar.css';
 function CalendarApp() {
 	const appProps = useContext(AppContext)
 	return (
-		<div>
+		<div id={'calendar-wrapper'}>
 			<Header/>
 			<h2 id={'cal-service-title'}>{appProps.service}</h2>
 			<h3 id={'cal-sub-heading'}>Select a date/time.</h3>

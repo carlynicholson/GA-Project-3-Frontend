@@ -21,8 +21,8 @@ function Dashboard() {
                             <img src={walkIcon}
                                  alt={'walk'}
                                  onClick={() => appProps.handleServiceClick('Walk')}/>
-                            <p className={'dash-service'}>Walk</p>
                         </Link>
+                        <p className={'dash-service'}>Walk</p>
                         <p id={'dash-walk-pricing'}> Starting at $15</p>
                     </div>
                     <div className={'dash-service-icon'}>
@@ -30,8 +30,8 @@ function Dashboard() {
                             <img src={groomIcon}
                                  alt={'groom'}
                                  onClick={() => appProps.handleServiceClick('Groom')}/>
-                            <p className={'dash-service'}>Groom</p>
                         </Link>
+                        <p className={'dash-service'}>Groom</p>
                         <p id={'dash-groom-details'}>New service!</p>
                     </div>
                     <div className={'dash-service-icon'}>
@@ -39,8 +39,8 @@ function Dashboard() {
                             <img src={overnightIcon}
                                  alt={'overnight'}
                                  onClick={() => appProps.handleServiceClick('Overnight')}/>
-                            <p className={'dash-service'}>Overnight</p>
                         </Link>
+                        <p className={'dash-service'}>Overnight</p>
                         <p id={'dash-overnight-details'}>Sitting and boarding</p>
                     </div>
                 </div>

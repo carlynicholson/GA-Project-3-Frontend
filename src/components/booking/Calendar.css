@@ -5,6 +5,16 @@
     font-family: Roboto, serif;
 }
 
+#calendar-wrapper {
+    background-image: url('../../assets/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
 #cal-service-title {
     color: #E56C4E;
     margin: 2em 0 .25em 0;
@@ -41,7 +51,7 @@
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 2em;
-    border: solid 1px #E56C4E;
+    border: solid 1px white;
     border-radius: 10px;
     background-color: #E56C4E;
     color: white;

@@ -99,6 +99,8 @@ Link p {
         display: grid;
 	grid-template-rows: repeat(1,.5fr);
 	grid-template-columns:repeat(3, .5fr);
+        max-width: 1200px;
+        margin: 0 auto;
     }
 	
     .booking-service-groom-icon {
