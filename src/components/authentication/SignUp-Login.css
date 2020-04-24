@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-/* nav, footer {
-    display: none;
-} */
-
 .auth-body {
     background-image: url("../../assets/background.png");
     background-position: center;
@@ -52,13 +48,8 @@
     text-align: center;
 }
 
-<<<<<<< HEAD
-.User-Login, .Create-Account {
-    color: #5E5D5D;
-=======
 .User-Login, .Create-Account, .Profile-Title, .All-Pets-Box h1 {
-    color: #353535;
->>>>>>> pet
+    color: #5E5D5D;
     padding: 30px;
     font-size: 1.7em;
 }
@@ -77,8 +68,7 @@
     margin: 20px 0;
     padding-top: 30px;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .All-Pets-Box h1 {
@@ -102,8 +92,8 @@
 .All-Pets {
     display: flex;
     justify-content: space-around;
-
 }
+
 .Each-Pet {
     display: block;
     align-items: center;
@@ -131,7 +121,6 @@
     background: #ffffff;   
 }
 
-<<<<<<< HEAD
 .SignUp-Form-Input {
     font-weight: 400;
     font-family: Roboto;
@@ -144,17 +133,7 @@
     background: #ffffff;   
 }
 
-/* PSA: If you decide to touch the button CSS, or even think about just breathing near it... 
-pls reconsider. I am so tired. */
-
-.SignUp-Form-Button {
-=======
-.Pet-Buttons {
-    margin: 40px 0;
-}
-
 .Login-Form-Button, .SignUp-Form-Button, .Pet-Button {
->>>>>>> pet
     color:#ffffff;
     border: none;
     border-radius: 1px;
@@ -162,7 +141,6 @@ pls reconsider. I am so tired. */
     width: 20%;
     margin: 20px 0 8px 0;
     background-color: #e56c4e;
-<<<<<<< HEAD
     padding: 10px 15px;
     text-align: center;
     font-size: 1.2em;
@@ -173,14 +151,6 @@ pls reconsider. I am so tired. */
     align-content: center;
     align-self: center;
     justify-content: center;
-=======
-    padding: 10px 15px;    
-    min-width: 75px;
-}
-
-.Pet-Button {
-    margin: 5px;
->>>>>>> pet
 }
 
 .Login-Form-Button {
@@ -228,7 +198,6 @@ p.login-prompt > a:hover {
     text-decoration-color: #e56c4e;
 }
 
-<<<<<<< HEAD
 /* .SignUp p, .SignUp a {
     color: #353535;
     margin-top: 0;
@@ -243,7 +212,7 @@ p.login-prompt > a:hover {
     color: #353535;
     text-decoration: none;
 } */
-=======
+
 .Profile {
     position: relative;
 }
@@ -254,7 +223,6 @@ p.login-prompt > a:hover {
     top: 15px;
     right: 15px;
 }
->>>>>>> pet
 
 @media(min-width: 375px) {
     .Login-Image {

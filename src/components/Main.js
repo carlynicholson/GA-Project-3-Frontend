@@ -9,14 +9,10 @@ import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
 import Confirmation from './confirmation/Confirmation';
 import About from './about/About';
-<<<<<<< HEAD
 import Providers from "./booking/providers/providers";
-=======
 import CreatePet from './authentication/CreatePet'
 import PetConfirmation from './authentication/PetConfirmation'
 import Profile from './authentication/Profile'
->>>>>>> pet
-
 
 export default function Main() {
     return (
@@ -34,7 +30,7 @@ export default function Main() {
                 <Route exact path="/addpet" component={CreatePet} />
                 <Route exact path="/petconfirmed" component = {PetConfirmation} />
                 <Route exact path="/profile" component = {Profile} />
-                {/* <Redirect to='/login' /> */}
+                <Redirect to='/login' />
             </Switch>
         </>
     );
