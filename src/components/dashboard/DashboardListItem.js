@@ -23,14 +23,18 @@ export default function DashboardListItem(props) {
 
 	return (
 		<div className={'upcoming-appointment'}>
-			<div className={'upcoming-appointment-type'}>{theService}</div>
-			<div className={'upcoming-appointment-date'}>{theDate} @ </div>
-			<div className={'upcoming-appoingment-time'}>{theTime}</div>
-			<div className={'appointment-edit-icon'}>
-				<img src={Edit} alt={'edit appointment'}/>
+			<div className={'upcoming-app-details-container'}>
+				<div className={'upcoming-appointment-detail'}>{theService}</div>
+				<div className={'upcoming-appointment-detail'}>{theDate}</div>
+				<div className={'upcoming-appointment-detail'}> @{theTime}</div>
 			</div>
-			<div className={'appointment-cancel-icon'}>
-				<img src={Cancel} alt={'cancel appointment'}/>
+			<div className={'upcoming-app-icon-container'}>
+				<div className={'appointment-edit-icon'}>
+					<img src={Edit} alt={'edit appointment'}/>
+				</div>
+				<div className={'appointment-cancel-icon'}>
+					<img src={Cancel} alt={'cancel appointment'}/>
+				</div>
 			</div>
 		</div>
 	);
