@@ -3,83 +3,102 @@
     padding: 0;
     box-sizing: border-box;
 }
-p{
+
+p {
     color: #A9A9A9;
     font-size: 30px;
     margin-bottom: 60px;   
 }
-#booking-service-title{
+
+#booking-service-title {
     font-size: 27px;
     padding-top: 25px;
     padding-bottom: 65px;
 }
-.booking-service-icon-container{
+
+.booking-service-icon-container {
     padding-bottom: 50px;
 }
-img{
+
+img {
     padding-bottom: 20px;
 }
-@media (min-width: 768px) and (max-width: 1023px){
-    #booking-service-icon-container{
-        display: grid;
-		grid-template-rows: repeat(1,.5fr);
-		grid-template-columns:repeat(3, .5fr);
-    }
-    .booking-service-groom-icon{
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+	#booking-service-icon-container {
+	display: grid;
+	grid-template-rows: repeat(1,.5fr);
+	grid-template-columns:repeat(3, .5fr);
+}
+	
+    .booking-service-groom-icon {
         margin-top: 110px;
-        
     }
-    .booking-service-overnight-icon{
+	
+    .booking-service-overnight-icon {
         margin-top: 100px;
     }
-    .booking-service-walk-icon{
+	
+    .booking-service-walk-icon {
         margin-top: 110px;
     }
-    img{
+	
+    img {
         margin-bottom: 50px;
     }
-    #booking-service-title{
+	
+    #booking-service-title {
         font-size: 40px;
         margin-top: 50px;
         padding-bottom: 65px;
     }
-    p{
+	
+    p {
         font-size: 45px;
         
     }
-    .links{
+	
+    .links {
         text-decoration: none;
     }
 }
+
 @media (min-width: 1023px){
-    #booking-service-icon-container{
+	
+    #booking-service-icon-container {
         display: grid;
-		grid-template-rows: repeat(1,.5fr);
-		grid-template-columns:repeat(3, .5fr);
+	grid-template-rows: repeat(1,.5fr);
+	grid-template-columns:repeat(3, .5fr);
     }
-    .booking-service-groom-icon{
+	
+    .booking-service-groom-icon {
         margin-top: 110px;
-        
     }
-    .booking-service-overnight-icon{
+	
+    .booking-service-overnight-icon {
         margin-top: 100px;
     }
-    .booking-service-walk-icon{
+	
+    .booking-service-walk-icon {
         margin-top: 110px;
     }
-    img{
+	
+    img {
         margin-bottom: 50px;
     }
-    #booking-service-title{
+	
+    #booking-service-title {
         font-size: 40px;
         margin-top: 50px;
         padding-bottom: 65px;
     }
-    p{
-        font-size: 45px;
-        
+	
+    p {
+        font-size: 45px; 
     }
-    .links{
+	
+    .links {
         text-decoration: none;
     }
 }
