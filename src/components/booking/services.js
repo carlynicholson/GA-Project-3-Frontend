@@ -5,6 +5,7 @@ import overnightIcon from '../../assets/overnight.png';
 import logo from '../../assets/logo-color.png';
 import {AppContext} from "../../App";
 import {Link} from "react-router-dom";
+import './Services.css'
 
 export default function Services() {
 	const appProps = useContext(AppContext);
