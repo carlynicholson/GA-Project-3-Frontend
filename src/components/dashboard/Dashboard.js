@@ -48,7 +48,9 @@ function Dashboard() {
             <div id={'dash-upcoming-services-container'}>
                 <DashboardList/>
             </div>
-            <button id={'dash-book-button'}>BOOK A SERVICE</button>
+            <Link to={'/services'}>
+                <button id={'dash-book-button'}>BOOK A SERVICE</button>
+            </Link>
         </>
     );
 }
