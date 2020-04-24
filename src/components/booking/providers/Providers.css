@@ -7,26 +7,36 @@
 
 #provider-service-title {
     color: #E56C4E;
-    margin: 2em 0 .25em 0;
+    font-size: 28px;
+    font-weight: 650;
+    margin: 1.5em 0 .25em 0;
 }
 
 #provider-sub-heading {
     color: #A9A9A9;
-    margin-bottom: 2em;
+    font-size: 20px;
+    margin-bottom: 1.75em;
 }
 
 #book-directions {
     color: #A9A9A9;
     font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .provider-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .provider-img-name-container {
     margin: 10px 0 10px 15px;
+}
+
+.provider-photo {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
 }
 
 .provider-name {
