@@ -9,6 +9,7 @@ function App(props) {
     loggedInStatus: "Not_Logged_In",
     user: {}
   });
+  const [pets, setPets] = useState([])
 
   const handleServiceClick = (service) => {
     setService(service);
@@ -35,6 +36,9 @@ function App(props) {
             service,
             date,
             setDate,
+            loggedIn,
+            pets,
+            setPets
           }
         }>
           <Main />
