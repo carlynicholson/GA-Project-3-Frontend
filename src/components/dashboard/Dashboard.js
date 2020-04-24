@@ -6,6 +6,7 @@ import walkIcon from "../../assets/walk.png";
 import groomIcon from "../../assets/groom.png";
 import overnightIcon from "../../assets/overnight.png";
 import Header from "../header/Header";
+import Footer from '../Footer';
 import './Dashboard.css';
 
 function Dashboard() {
@@ -51,6 +52,8 @@ function Dashboard() {
             <Link to={'/services'}>
                 <button id={'dash-book-button'}>BOOK A SERVICE</button>
             </Link>
+
+            <Footer />
         </>
     );
 }
