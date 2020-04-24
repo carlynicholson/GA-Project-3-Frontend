@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import {createUser} from '../../services/api-loginHelper'
+import {createUser} from '../../services/api-helper'
 import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
 import './SignUp-Login.css'
@@ -15,10 +15,7 @@ function SignUp(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setNewUser({
-            ...newUser,
-            [e.target.name]: value
-        });
+        setNewUser({...newUser, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {
