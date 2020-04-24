@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-nav, footer {
+/* nav, footer {
     display: none;
-}
+} */
 
 .auth-body {
     background-image: url("../../assets/background.png");

@@ -3,8 +3,6 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Login from './authentication/Login'
 import SignUp from './authentication/SignUp'
 import Dashboard from './Dashboard'
-import Header from './header/Header'
-import Footer from './Footer'
 import Services from "./booking/services";
 import CalendarApp from "./booking/calendar";
 import Confirmation from './confirmation/Confirmation';
@@ -15,7 +13,6 @@ import Providers from "./booking/providers/providers";
 export default function Main(props) {
     return (
         <>
-            <Header/>
             <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/login" component={Login} />
@@ -28,7 +25,6 @@ export default function Main(props) {
                 <Route exact path="/our-team" component={About} />
                 <Redirect to='/login' />
             </Switch>
-            <Footer/>
         </>
     );
 };
