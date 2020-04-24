@@ -6,17 +6,15 @@
 }
 
 #calendar-wrapper {
-    background-image: url('../../assets/background.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
     height: 100vh;
 }
 
 
 #cal-service-title {
     color: #E56C4E;
+    font-size: 28px;
+    font-weight: 650;
     margin: 2em 0 .25em 0;
 }
 
@@ -59,7 +57,8 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #cal-service-title {
-        font-size: 3em;
+        font-size: 28px;
+        font-weight: 650;
     }
 
     #cal-sub-heading {
