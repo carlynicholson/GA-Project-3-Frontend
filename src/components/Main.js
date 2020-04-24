@@ -12,7 +12,7 @@ import About from './about/About';
 import Providers from "./booking/providers/providers";
 
 
-export default function Main(props) {
+export default function Main() {
     return (
         <>
             <Header/>
