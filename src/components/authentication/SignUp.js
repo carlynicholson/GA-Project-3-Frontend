@@ -31,7 +31,6 @@ function SignUp(props) {
 
     const handleSuccessfulAuth = (data) => {
         appProps.handleLogin(data);
-        console.log('here')
         props.history.push("/addpet");
     };
 

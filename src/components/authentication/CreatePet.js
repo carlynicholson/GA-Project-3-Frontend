@@ -6,9 +6,6 @@ import './SignUp-Login.css'
 function CreatePet(props) {
     const appContext = useContext(AppContext)
     const user = appContext.loggedIn.user
-    console.log('user', user)
-    console.log('userID', user._id)
-    // const userID = user._id
     const [newPet, setNewPet] = useState({
         name: "",
         age: "",
@@ -37,7 +34,6 @@ function CreatePet(props) {
     };
 
     const handleSuccessfulAuth = (data) => {
-        console.log('handleSucc', data)
         props.history.push("/petconfirmed");
     };
     

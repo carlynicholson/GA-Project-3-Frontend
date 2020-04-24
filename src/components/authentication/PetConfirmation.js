@@ -6,13 +6,10 @@ import './SignUp-Login.css'
 function PetConfirmation(props) {
     const appProps = useContext(AppContext)
     const user = appProps.loggedIn.user
-    console.log('user', user)
-    console.log('userID', user._id)
-    
+        
     useEffect(() => {
         const allPetsAPICall = async () => {
             const json = await getAllPets(user._id).then(response => {
-                console.log('allpets', response.data)
                 if (response.status === 200) {
                     appProps.setPets(response.data);
                 }
@@ -24,26 +21,22 @@ function PetConfirmation(props) {
     }, []);
     
     const allPets = appProps.pets.map((pet,index) => {
-        
         return (
             <div key={index} className="Each-Pet">
                 <img className="Pet-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
                     alt="DogFace" />
                 <div className="Pet-Name">{pet.name}</div>
             </div>
-            
         )
     })
 
     const handleClick = async (e) => {
         e.preventDefault();
-        console.log('handleContinueSubmit')
         props.history.push("/dashboard");
     };
 
     const handlePetClick = async (e) => {
         e.preventDefault();
-        console.log('handlePetSubmit')
         props.history.push("/addpet");
     };
     
