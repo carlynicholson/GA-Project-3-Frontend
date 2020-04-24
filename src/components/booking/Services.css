@@ -16,10 +16,19 @@ Link p {
     text-decoration: none !important;
 }
 
+#dash-service-container {
+    background-image: url('../../assets/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
 #booking-service-title {
     font-size: 27px;
     padding-top: 25px;
-    padding-bottom: 65px;
+    padding-bottom: 40px;
     color: #6A6A6A;
 }
 

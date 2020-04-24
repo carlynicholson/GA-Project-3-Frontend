@@ -41,7 +41,6 @@ function Login(props) {
             <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
             <div className="Login-Container">
                 <div className="Login">
-
                     <div className="User-Login">user login</div>
                     <form className="Login-Form" onSubmit={handleSubmit}>
                         <input className="Login-Form-Input"
