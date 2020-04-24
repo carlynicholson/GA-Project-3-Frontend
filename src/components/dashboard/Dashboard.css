@@ -6,31 +6,33 @@
 }
 
 #dash-service-title {
-    font-size: 27px;
-    padding-top: 25px;
+    font-size: 1.5em;
+    padding-top: 35px;
     padding-bottom: 65px;
     color: #6A6A6A;
 }
 
 .dash-service-icon img{
-    height: 2em;
+    height: 2.25em;
 }
 
 #dash-walk-pricing {
-    font-size: 1em;
+    font-size: 1.13em;
 }
 
 #dash-groom-details {
-    font-size: 1em;
+    font-size: 1.13em;
 }
 
 #dash-overnight-details {
-    font-size: 1em;
+    font-size: 1.13em;
 }
 
 .dash-service {
     font-size: 1.25em;
-    margin-bottom: .5em;
+    margin-bottom: .3em;
+    padding-top: 35px;
+    font-weight: 700;
     text-decoration: none !important;
 }
 
@@ -77,10 +79,11 @@ Link {
 
 #dash-book-button {
     width: 65vw;
-    height: 40px;
+    height: 55px;
     font-size: 1.5em;
     font-weight: bold;
     margin-top: 2em;
+    margin-bottom: 2em;
     border: solid 1px #E56C4E;
     border-radius: 10px;
     background-color: #E56C4E;
@@ -89,7 +92,7 @@ Link {
 
 @media (min-width: 768px) and (max-width: 1023px) {
     #dash-service-title {
-        font-size: 2.75em;
+        font-size: 1.5em;
     }
 
     .dash-service-icon img{
@@ -97,7 +100,11 @@ Link {
     }
 
     .dash-service {
-        font-size: 2em;
+        font-size: 1.25em;
+        margin-bottom: .3em;
+        padding-top: 35px;
+        font-weight: 600;
+        text-decoration: none !important;
     }
 
     #dash-book-button {
@@ -110,14 +117,14 @@ Link {
 
 @media (min-width: 1023px) {
     #dash-service-title {
-        font-size: 3.75em;
+        font-size: 2.2em;
     }
 
     #dash-service-icon-container {
         width: 80%;
         max-width: 1200px;
         margin: 0 auto;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #upcoming-services-container {
@@ -140,15 +147,15 @@ Link {
     }
 
     #dash-walk-pricing {
-        font-size: 1.5em;
+        font-size: 1.13em;
     }
 
     #dash-groom-details {
-        font-size: 1.5em;
+        font-size: 1.13em;
     }
 
     #dash-overnight-details {
-        font-size: 1.5em;
+        font-size: 1.13em;
     }
 
     .upcoming-app-details-container {
