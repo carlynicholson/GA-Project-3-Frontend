@@ -10,7 +10,9 @@ import CalendarApp from "./booking/calendar";
 import Confirmation from './confirmation/Confirmation';
 import About from './about/About';
 import Providers from "./booking/providers/providers";
-
+import CreatePet from './authentication/CreatePet'
+import PetConfirmation from './authentication/PetConfirmation'
+import Profile from './authentication/Profile'
 
 export default function Main() {
     return (
@@ -25,6 +27,9 @@ export default function Main() {
                 <Route exact path="/localproviders" component={Providers}/>
                 <Route exact path="/confirmation" component={Confirmation} />
                 <Route exact path="/our-team" component={About} />
+                <Route exact path="/addpet" component={CreatePet} />
+                <Route exact path="/petconfirmed" component = {PetConfirmation} />
+                <Route exact path="/profile" component = {Profile} />
                 <Redirect to='/login' />
             </Switch>
         </>
