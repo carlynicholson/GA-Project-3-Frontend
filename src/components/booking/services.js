@@ -5,11 +5,13 @@ import overnightIcon from '../../assets/overnight.png';
 import {AppContext} from "../../App";
 import {Link} from "react-router-dom";
 import './Services.css'
+import Header from "../header/Header";
 
 export default function Services() {
 	const appProps = useContext(AppContext);
 	return (
 		<div id={'dash-service-container'}>
+			<Header/>
 			<h2 id={'booking-service-title'}>Which service does your pup need?</h2>
 			<div id={'booking-service-icon-container'}>
 				<div className={'booking-service-walk-icon'}>

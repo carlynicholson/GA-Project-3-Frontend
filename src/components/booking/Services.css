@@ -2,27 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, serif;
 }
 
 p {
     color: #A9A9A9;
     font-size: 30px;
-    margin-bottom: 60px;   
+    margin-bottom: 60px;
+    text-decoration: none !important;
+}
+
+Link p {
+    text-decoration: none !important;
 }
 
 #booking-service-title {
     font-size: 27px;
     padding-top: 25px;
     padding-bottom: 65px;
+    color: #6A6A6A;
 }
 
 .booking-service-icon-container {
     padding-bottom: 50px;
 }
 
-/* img {
-    padding-bottom: 20px;
-} */
+#serv-logo {
+    height: 2em;
+    margin-top: 2em;
+}
+
+.booking-service-walk-icon img{
+    height: 5em;
+}
+
+.booking-service-groom-icon img{
+    height: 5em;
+}
+
+.booking-service-overnight-icon img{
+    height: 5em;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     
@@ -44,10 +64,6 @@ p {
         margin-top: 110px;
     }
 	
-    /* img {
-        margin-bottom: 50px;
-    } */
-	
     #booking-service-title {
         font-size: 40px;
         margin-top: 50px;
@@ -65,6 +81,10 @@ p {
 }
 
 @media (min-width: 1023px){
+    #serv-logo {
+        height: 4em;
+        margin-top: 2em;
+    }
 	
     #booking-service-icon-container {
         display: grid;
@@ -83,10 +103,18 @@ p {
     .booking-service-walk-icon {
         margin-top: 110px;
     }
-	
-    /* img {
-        margin-bottom: 50px;
-    } */
+
+    .booking-service-walk-icon img{
+        height: 8em;
+    }
+
+    .booking-service-groom-icon img{
+        height: 8em;
+    }
+
+    .booking-service-overnight-icon img{
+        height: 8em;
+    }
 	
     #booking-service-title {
         font-size: 40px;
