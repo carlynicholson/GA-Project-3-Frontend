@@ -234,6 +234,17 @@ p.login-prompt > a:hover {
     right: 15px;
 }
 
+.Profile {
+    position: relative;
+}
+
+.Profile-X {
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
 @media(min-width: 375px) {
     .Login-Image {
         background: url("../../assets/logo-white.png");
