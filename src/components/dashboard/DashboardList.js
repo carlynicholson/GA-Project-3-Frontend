@@ -16,8 +16,8 @@ export default function DashboardList() {
 	});
 
 	return (
-		<div>
-			<h2>Upcoming Services</h2>
+		<div id={'upcoming-services-container'}>
+			<h2 id={'dash-upcoming-title'}>Upcoming Services</h2>
 			<div>{appointmentArray}</div>
 		</div>
 	);
