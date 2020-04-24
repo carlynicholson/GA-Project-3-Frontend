@@ -10,12 +10,9 @@ function ProvidersListItem(props) {
 	const handleBookClick = async(e) => {
 		e.preventDefault();
 		let book = props.element['_id'];
-		appProps.setChosenProvider(book);
+		setProviderID(book)
 		const json = await createAppointment(appProps.appointmentInfo).then((response) => {
-			console.log("APPOINTMENT INFO FROM PROVIDER ",appProps.appointmentInfo)
-			console.log("POST RESPONSE: ", response);
 			if (response.status === 200) {
-				console.log(response.data);
 				appProps.setNewAppointment([...appProps.newAppointment, appProps.appointmentInfo]);
 				history.push("/confirmation");
 			} else {
@@ -24,6 +21,10 @@ function ProvidersListItem(props) {
 		}).catch(error => {
 			return ("registration error" + error);
 		});
+	};
+
+	const setProviderID = (id) => {
+		appProps.setChosenProvider(id);
 	};
 
 	return (

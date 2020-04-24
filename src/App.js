@@ -8,9 +8,8 @@ function App() {
     const [date, setDate] = useState(new Date());
     const [appointmentTime, setAppointmentTime] = useState('10:00')
     const [localProviders, setLocalProviders] = useState([]);
-    const [chosenProvider, setChosenProvider] = useState("");
+    const [chosenProvider, setChosenProvider] = useState();
     const [newAppointment, setNewAppointment] = useState([]);
-    console.log(newAppointment);
     const [loggedIn, setLoggedIn] = useState({
         loggedInStatus: "Not_Logged_In",
         user: {}
@@ -19,11 +18,10 @@ function App() {
         date: date,
         time: appointmentTime,
         service: service,
-        petId: loggedIn.user.petId,
+        petId: loggedIn.user['pet'],
         user_id: loggedIn.user['_id'],
-        // provider_id: chosenProvider
+        provider_id: chosenProvider
     }
-    console.log("This is APPOINTMENT INFO: ",appointmentInfo)
 
     const handleLogin = (data) => {
         setLoggedIn({

@@ -17,6 +17,5 @@ export const getProviderByZip = async (zip) => {
 };
 
 export const createAppointment = async (appointment) => {
-    console.log("APPOINTMENT FROM HELPER: ",appointment);
     return await api.post('/appointments/', appointment);
 }
