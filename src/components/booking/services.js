@@ -9,7 +9,7 @@ import './Services.css'
 export default function Services() {
 	const appProps = useContext(AppContext);
 	return (
-		<div id={'booking-service-content-container'}>
+		<div id={'dash-service-container'}>
 			<h2 id={'booking-service-title'}>Which service does your pup need?</h2>
 			<div id={'booking-service-icon-container'}>
 				<div className={'booking-service-walk-icon'}>
