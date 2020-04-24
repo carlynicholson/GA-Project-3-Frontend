@@ -10,7 +10,7 @@ function SignUp(props) {
         name: "",
         email: "",
         password: "",
-        zip: ""
+        zip: "",
     });
 
     const handleChange = (e) => {
@@ -31,7 +31,8 @@ function SignUp(props) {
 
     const handleSuccessfulAuth = (data) => {
         appProps.handleLogin(data);
-        props.history.push("/dashboard");
+        console.log('here')
+        props.history.push("/addpet");
     };
 
     return (
