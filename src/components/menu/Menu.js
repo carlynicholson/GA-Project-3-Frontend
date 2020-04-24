@@ -28,11 +28,13 @@ render () {
             </Link>
 
             <div className="menu-profile">
-                <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
+                <Link to={'/profile'} style={{textDecoration: 'none'}}>
                     <img className="user-photo" src={Pup} alt='Photo'/>
                     <h1 className="user-name">Taylor</h1>
-                    <p className="profile-action">Sign Out</p>
                 </Link>
+                <Link to={'/login'} style={{textDecoration: 'none'}}>
+                    <p className="profile-action">Sign Out</p>
+                </Link>                
             </div>
 
             <div className="divider"></div>
