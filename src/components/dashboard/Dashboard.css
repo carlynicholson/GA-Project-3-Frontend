@@ -12,15 +12,7 @@
     color: #6A6A6A;
 }
 
-.dash-service-walk-icon img{
-    height: 2em;
-}
-
-.dash-service-groom-icon img{
-    height: 2em;
-}
-
-.dash-service-overnight-icon img{
+.dash-service-icon img{
     height: 2em;
 }
 
@@ -39,11 +31,17 @@
 .dash-service {
     font-size: 1.25em;
     margin-bottom: .5em;
+    text-decoration: none !important;
 }
 
 #dash-service-icon-container {
     display: flex;
     justify-content: space-around;
+    text-decoration: none !important;
+}
+
+Link {
+    text-decoration: none !important;
 }
 
 #dash-upcoming-title {
@@ -87,4 +85,92 @@
     border-radius: 10px;
     background-color: #E56C4E;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #dash-service-title {
+        font-size: 2.75em;
+    }
+
+    .dash-service-icon img{
+        height: 4em;
+    }
+
+    .dash-service {
+        font-size: 2em;
+    }
+
+    #dash-book-button {
+        width: 50vw;
+        height: 60px;
+        font-size: 1.75em;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1023px) {
+    #dash-service-title {
+        font-size: 3.75em;
+    }
+
+    #dash-service-icon-container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    #upcoming-services-container {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    #dash-upcoming-title {
+        font-size: 2em;
+        text-align: left;
+        margin: 25px;
+    }
+
+    .dash-service-icon img{
+        height: 5em;
+    }
+
+    .dash-service {
+        font-size: 2.5em;
+    }
+
+    #dash-walk-pricing {
+        font-size: 1.5em;
+    }
+
+    #dash-groom-details {
+        font-size: 1.5em;
+    }
+
+    #dash-overnight-details {
+        font-size: 1.5em;
+    }
+
+    .upcoming-app-details-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+    }
+
+    .upcoming-appointment-detail {
+        margin: 10px 25px;
+    }
+
+    .upcoming-app-icon-container img {
+        height: 1.25em;
+        margin: 18px 20px;
+    }
+
+    #dash-book-button {
+        width: 80%;
+        max-width: 1200px;
+        height: 80px;
+        font-size: 2em;
+        margin-top: 2em;
+    }
 }

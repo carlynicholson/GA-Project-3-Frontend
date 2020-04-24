@@ -16,7 +16,7 @@ function Dashboard() {
             <div id={'booking-service-content-container'}>
                 <h2 id={'dash-service-title'}>Which service does your pup need?</h2>
                 <div id={'dash-service-icon-container'}>
-                    <div className={'dash-service-walk-icon'}>
+                    <div className={'dash-service-icon'}>
                         <Link to={'/calendar'}>
                             <img src={walkIcon}
                                  alt={'walk'}
@@ -25,7 +25,7 @@ function Dashboard() {
                         </Link>
                         <p id={'dash-walk-pricing'}> Starting at $15</p>
                     </div>
-                    <div className={'dash-service-groom-icon'}>
+                    <div className={'dash-service-icon'}>
                         <Link to={'/calendar'}>
                             <img src={groomIcon}
                                  alt={'groom'}
@@ -34,7 +34,7 @@ function Dashboard() {
                         </Link>
                         <p id={'dash-groom-details'}>New service!</p>
                     </div>
-                    <div className={'dash-service-overnight-icon'}>
+                    <div className={'dash-service-icon'}>
                         <Link to={'/calendar'}>
                             <img src={overnightIcon}
                                  alt={'overnight'}
