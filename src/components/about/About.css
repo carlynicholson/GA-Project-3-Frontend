@@ -143,8 +143,8 @@ p.about-member {
 .icon-social-github {
     color: #353535;
     text-decoration: none;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .linkedin, .linkedin > a, .linkedin:hover {
@@ -154,8 +154,8 @@ p.about-member {
 .icon-social-linkedin {
     color: #353535;
     text-decoration: none;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .portfolio, .portfolio > a, .portfolio:hover {
@@ -165,8 +165,8 @@ p.about-member {
 .icon-globe {
     color: #353535;
     text-decoration: none;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px){
@@ -237,7 +237,7 @@ p.about-member {
       color: #353535;
       text-decoration: none;
       margin-left: 50px;
-      margin-right: 4px;
+      margin-right: 19px;
       font-size: 20px;
   }
   
@@ -245,7 +245,7 @@ p.about-member {
       color: #353535;
       text-decoration: none;
       margin-left: 4px;
-      margin-right: 4px;
+      margin-right: 19px;
       font-size: 20px;
   }
   
@@ -253,7 +253,7 @@ p.about-member {
       color: #353535;
       text-decoration: none;
       margin-left: 5px;
-      margin-right: 4px;
+      margin-right: 19px;
       font-size: 20px;
   } 
 }

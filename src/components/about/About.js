@@ -1,11 +1,16 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
+import Header from '../header/Header';
+import Footer from '../Footer';
 import './About.css';
 
 
 function About() {
     
     return(
+        <>
+        <Header />
+
         <div className="about-team-body">
             <div className="about-intro">
                 <h1 className="abouth1">Our Team</h1>
@@ -101,7 +106,12 @@ function About() {
                     </div>
                 </div>
             </div>
+        
+        <Footer />
         </div>
+
+
+        </>
     )
 }
 
