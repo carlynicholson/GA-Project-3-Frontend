@@ -18,4 +18,8 @@ export const getProviderByZip = async (zip) => {
 
 export const createAppointment = async (appointment) => {
     return await api.post('/appointments/', appointment);
-}
+};
+
+export const getAppointmentById = async (appointment) => {
+    return await api.get(`/appointments/${appointment}`);
+};
