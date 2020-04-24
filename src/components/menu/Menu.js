@@ -28,7 +28,7 @@ render () {
             </Link>
 
             <div className="menu-profile">
-                <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
+                <Link to={'/profile'} style={{textDecoration: 'none'}}>
                     <img className="user-photo" src={Pup} alt='Photo'/>
                     <h1 className="user-name">Taylor</h1>
                 </Link>
