@@ -30,7 +30,6 @@ function App() {
             user: data
         })
     };
-    console.log(loggedIn);
 
     const handleServiceClick = async(service) => {
         setService(service);

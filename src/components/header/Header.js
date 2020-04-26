@@ -6,7 +6,6 @@ import Logo from '../../assets/logo-color.png'
 
 function Header() {
     return (
-        <>
         <nav>
             <Sidebar />
             <Link to={'/'} style={{textDecoration: 'none'}}>
@@ -15,7 +14,6 @@ function Header() {
                 </div>
             </Link>
         </nav>
-        </>
     );
 }
 

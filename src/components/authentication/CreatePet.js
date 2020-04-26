@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import {createPet} from '../../services/api-loginHelper'
+import {createPet} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
 import Header from "../header/Header";
@@ -17,10 +17,7 @@ function CreatePet(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setNewPet({
-            ...newPet,
-            [e.target.name]: value
-        });
+        setNewPet({...newPet, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {
@@ -41,7 +38,6 @@ function CreatePet(props) {
     return (
         <div id={'pet-wrapper'}>
             <Header/>
-            {/*<img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />*/}
             <div className="Login-Container">
                 <div className="SignUp">
                     <div className="Create-Account">add a pet</div>

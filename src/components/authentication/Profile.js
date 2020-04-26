@@ -1,5 +1,5 @@
-import React, {useState, useContext, useEffect} from 'react'
-import {getAllPets} from '../../services/api-loginHelper'
+import React, {useContext, useEffect} from 'react'
+import {getAllPets} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
 
@@ -24,7 +24,6 @@ function Profile(props) {
     }, []);    
     
     const allPets = appProps.pets.map((pet,index) => {
-        
         return (
             <div key={index} className="Each-Pet">
                 <img className="Pet-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
@@ -68,6 +67,6 @@ function Profile(props) {
             </div>
         </div>
     );
-};
+}
 
 export default Profile;

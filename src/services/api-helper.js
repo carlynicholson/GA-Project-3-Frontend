@@ -12,6 +12,14 @@ export const verifyUser = async (user) => {
     return await api.get(`/users/${user.email}/${user.password}`, user);
 };
 
+export const createPet = async (pet) => {
+    return await api.post('/pets/', pet)
+};
+
+export const getAllPets = async (userId) => {
+    return await api.get(`/pets/account/${userId}`)
+};
+
 export const getProviderByZip = async (zip) => {
     return await api.get(`/providers/location/${zip}`);
 };

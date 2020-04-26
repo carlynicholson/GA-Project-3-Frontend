@@ -1,5 +1,5 @@
 import React, {useState, useContext, useEffect} from 'react'
-import {getAllPets} from '../../services/api-loginHelper'
+import {getAllPets} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
 import Header from "../header/Header";
@@ -24,8 +24,9 @@ function PetConfirmation(props) {
     const allPets = appProps.pets.map((pet,index) => {
         return (
             <div key={index} className="Each-Pet">
-                <img className="Pet-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
-                    alt="DogFace" />
+                <img className="Pet-Image"
+                     src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
+                     alt="DogFace" />
                 <div className="Pet-Name">{pet.name}</div>
             </div>
         )

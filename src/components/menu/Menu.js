@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
 import './Menu.css';
-
 import Logo from '../../assets/logo-color.png';
 import Pup from '../../assets/pup.png';
 import House from '../../assets/house.png';
@@ -15,9 +14,7 @@ class Sidebar extends React.Component {
     }
 
 render () {
-    
     return (
-    
         <>
         <Menu>
 
@@ -57,9 +54,7 @@ render () {
         </Menu>
         </>
         );
-
     }
-
 }
 
 export default Sidebar;

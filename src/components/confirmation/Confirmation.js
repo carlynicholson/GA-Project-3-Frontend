@@ -6,21 +6,17 @@ import Footer from '../Footer';
 import './Confirmation.css';
 import Calendar from '../../assets/conf-cal.png';
 
-
 function Confirmation() {
     const appProp = useContext(AppContext)
     const propsDate = appProp.date
     const date = (new Date(propsDate)).toString()
 
-    return(
-
+    return (
         <div className="conf-body">
-            <Header />
-
+            <Header/>
             <div className="conf-page">
                 <div className="conf-box">
                     <div className="conf-box-info">
-
                         <h1 className="conf-h1">Request Sent!</h1>
                         <p className="conf-par">Average wait time for confirmation is:</p>
                         <h2 className="conf-h2">20 min.</h2>
@@ -33,15 +29,12 @@ function Confirmation() {
                         <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
                             <h3 className="conf-h3">Back to Home Page</h3>
                         </Link>
-
                     </div>
                 </div>
             </div>
-
-            <Footer />
+            <Footer/>
         </div>
-
-    )
+    );
 }
 
 export default Confirmation;

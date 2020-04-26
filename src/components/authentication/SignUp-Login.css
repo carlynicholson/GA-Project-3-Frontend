@@ -63,7 +63,7 @@
 
 .Login, .SignUp, .All-Pets-Container, .Profile {
     width: 85%;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     background: rgba(249, 247, 247, 0.9);
     box-shadow: 20px 25px 13px -20px rgba(0,0,0,0.35);
     border-radius: 9px;
@@ -94,13 +94,13 @@
 }
 
 .All-Pets-Box h1 {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-weight: 400;
 }
 
 .User-Profile-Item {
     font-weight: 500;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #353535;
     width: 85%;
     padding: 12px 20px 5px 20px;
@@ -133,7 +133,7 @@
 
 .Login-Form-Input {
     font-weight: 400;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #6A6A6A;
     width: 85%;
     padding: 12px 20px;
@@ -145,7 +145,7 @@
 
 .SignUp-Form-Input {
     font-weight: 400;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #6A6A6A;
     width: 85%;
     padding: 12px 20px;
@@ -157,10 +157,9 @@
 
 .SignUp-Form-Button {
     color:#ffffff;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     border: none;
     border-radius: 1px;
-    font-weight: 700;
     width: 20%;
     margin: 20px 0 8px 0;
     background-color: #e56c4e;
@@ -177,7 +176,7 @@
 
 .Login-Form-Button {
     color:#ffffff;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     border: none;
     border-radius: 1px;
     width: 20%;
@@ -196,10 +195,9 @@
 
 .Pet-Button {
     color:#ffffff;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     border: solid 1px #a9a9a9;
     border-radius: 10px;
-    font-weight: 700;
     width: 20%;
     margin: 20px 5px 28px 5px;
     background-color: #e56c4e;
@@ -216,12 +214,12 @@
 
 .Login-Form-Button:hover {
       cursor: pointer;
-      opacity: 90%;
+      opacity: .90;
 }
 
 .SignUp-Form-Button:hover {
     cursor: pointer;
-    opacity: 90%;
+    opacity: .90;
 }
 
 p.login-prompt {
@@ -229,7 +227,7 @@ p.login-prompt {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 40px;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: .9em;
     text-decoration:none;
 }
@@ -284,10 +282,6 @@ p.login-prompt > a:hover {
     .Login-Form-Input, .SignUp-Form-Input {
         width: 75%;
     }
-
-    /* .Login p, .Login a, .SignUp p, .SignUp a {
-        font-size: .9em;
-    } */
 }
 
 @media(min-width: 425px) {
@@ -302,11 +296,7 @@ p.login-prompt > a:hover {
     .User-Login, .Create-Account, .Profile-Title, .All-Pets-Box h1 {
         padding: 30px;  
         font-size: 1.3em;      
-    } 
-
-    /* .Login p, .Login a, .SignUp p, .SignUp a {
-        font-size: .7em;
-    } */
+    }
 }
 
 @media(min-width: 768px) {
@@ -329,7 +319,6 @@ p.login-prompt > a:hover {
     .User-Profile-Item {
         padding-right: 1px;
         width: 48%;
-        
     }
 }
 
@@ -356,45 +345,12 @@ p.login-prompt > a:hover {
 }
 
 .Login-Form-Button {
-    color:#ffffff;
-    font-family: Roboto;
-    border: none;
-    border-radius: 1px;
     width: 120px;
-    margin: 20px 0 8px 0;
-    background-color: #e56c4e;
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 1.2em;
-    letter-spacing: 1.4px;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
 }
 
 .SignUp-Form-Button {
-    color:#ffffff;
-    font-family: Roboto;
-    border: none;
-    border-radius: 1px;
     width: 120px;
-    margin: 20px 0 8px 0;
-    background-color: #e56c4e;
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 1.2em;
-    letter-spacing: 1.4px;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    justify-content: center;
 }
-
-/* .Login p, .Login a, .SignUp p, .SignUp a {
-    font-size: 1em;
-    text-decoration:none;
-} */
 
 @media(min-width: 1440px) {
     .Login-Image {
