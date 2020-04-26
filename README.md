@@ -1,3 +1,7 @@
+#### Demo Credentials:
+- Login: taylor@demo.com
+- Password: demo
+
 #### MVP - Front end
 - User login in form connected to mondoDB data
 - Form to create an account as a pet owner
