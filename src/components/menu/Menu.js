@@ -27,7 +27,7 @@ render () {
             <div className="menu-profile">
                 <Link to={'/profile'} style={{textDecoration: 'none'}}>
                     <img className="user-photo" src={Pup} alt='Photo'/>
-                    <h1 className="user-name">Taylor</h1>
+                    <h1 className="user-name">{this.props.userName}</h1>
                 </Link>
                 <Link to={'/login'} style={{textDecoration: 'none'}}>
                     <p className="profile-action">Sign Out</p>

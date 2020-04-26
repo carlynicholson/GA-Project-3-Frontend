@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* git rm src/components/menu/Menu2.css src/components/menu/Menu2.js src/components/menu/Menu3.css src/components/menu/Menu3.js src/components/menu/Menu4.css src/components/menu/Menu4.js */
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
