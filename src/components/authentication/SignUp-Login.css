@@ -252,6 +252,12 @@ p.login-prompt > a:hover {
     text-decoration:none;
 }
 
+#demo-login-link:hover {
+    cursor: pointer;
+    border-bottom: solid #E56C4E 1px;
+    color: #E56C4E;
+}
+
 .Profile {
     position: relative;
 }

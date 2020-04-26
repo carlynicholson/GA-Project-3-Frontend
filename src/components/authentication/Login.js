@@ -73,7 +73,7 @@ function Login(props) {
                         <button className="Login-Form-Button" type="submit">continue</button>
                     </form>
                     <p className="login-prompt">Don't have an account? <Link to="/signup">Create one!</Link></p>
-                    <p id={'demo-login'} onClick={handleDemoSubmit}>or Login to Demo</p>
+                    <p id={'demo-login'}>or <span id={'demo-login-link'} onClick={handleDemoSubmit}>Login to Demo</span></p>
                 </div>
             </div>
         </div>
