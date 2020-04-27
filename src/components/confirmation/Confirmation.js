@@ -26,9 +26,11 @@ function Confirmation() {
                             <p className="requested-service">Requested date and time:</p>
                             <p className="date-time"> {date} at {appProp.appointmentTime}</p>
                         </div>
-                        <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
-                            <h3 className="conf-h3">Back to Home Page</h3>
-                        </Link>
+                        <h3 className="conf-h3">
+                            <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
+                                <span>Back to Home Page</span>
+                            </Link>
+                        </h3>
                     </div>
                 </div>
             </div>
