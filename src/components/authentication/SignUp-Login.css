@@ -361,14 +361,14 @@ p.login-prompt > a:hover {
         font-weight: 400;
         font-size: .9em;   
     }
+}
 
-    .Login-Form-Button {
-        width: 120px;
-    }
+.Login-Form-Button {
+    width: 120px;
+}
 
-    .SignUp-Form-Button {
-        width: 120px;
-    }
+.SignUp-Form-Button {
+    width: 120px;
 }
 
 @media(min-width: 1440px) {
