@@ -1,7 +1,8 @@
 import React, {useState, useContext} from 'react'
-import {createPet} from '../../services/api-loginHelper'
+import {createPet} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
+import Header from "../header/Header";
 
 function CreatePet(props) {
     const appContext = useContext(AppContext)
@@ -16,15 +17,12 @@ function CreatePet(props) {
 
     const handleChange = (e) => {
         const value = e.target.value
-        setNewPet({
-            ...newPet,
-            [e.target.name]: value
-        });
+        setNewPet({...newPet, [e.target.name]: value});
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const json = await createPet(newPet).then(response => {
+        await createPet(newPet).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data);
             }
@@ -38,11 +36,11 @@ function CreatePet(props) {
     };
     
     return (
-        <>
-            <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
+        <div id={'pet-wrapper'}>
+            <Header/>
             <div className="Login-Container">
                 <div className="SignUp">
-                    <div className="Create-Account">create account</div>
+                    <div className="Create-Account">add a pet</div>
                     <form onSubmit={handleSubmit} className="SignUp-Form">
                         <input className="SignUp-Form-Input"
                             type="text"
@@ -72,7 +70,7 @@ function CreatePet(props) {
                     </form>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

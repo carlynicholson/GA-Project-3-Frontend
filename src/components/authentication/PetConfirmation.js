@@ -1,7 +1,8 @@
 import React, {useState, useContext, useEffect} from 'react'
-import {getAllPets} from '../../services/api-loginHelper'
+import {getAllPets} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
+import Header from "../header/Header";
 
 function PetConfirmation(props) {
     const appProps = useContext(AppContext)
@@ -9,7 +10,7 @@ function PetConfirmation(props) {
         
     useEffect(() => {
         const allPetsAPICall = async () => {
-            const json = await getAllPets(user._id).then(response => {
+            await getAllPets(user._id).then(response => {
                 if (response.status === 200) {
                     appProps.setPets(response.data);
                 }
@@ -23,8 +24,9 @@ function PetConfirmation(props) {
     const allPets = appProps.pets.map((pet,index) => {
         return (
             <div key={index} className="Each-Pet">
-                <img className="Pet-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
-                    alt="DogFace" />
+                <img className="Pet-Image"
+                     src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587677583/Project3/dog-icon_awou9z.png"
+                     alt="DogFace" />
                 <div className="Pet-Name">{pet.name}</div>
             </div>
         )
@@ -41,7 +43,8 @@ function PetConfirmation(props) {
     };
     
     return (
-        <>
+        <div id={'pet-confirm-wrapper'}>
+            <Header/>
             <div className="Pet-Confirmation">
                 <div className="All-Pets-Container">
                     <h1>{user.name}'s Pets</h1>
@@ -52,7 +55,7 @@ function PetConfirmation(props) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

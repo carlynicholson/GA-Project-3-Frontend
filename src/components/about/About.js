@@ -32,13 +32,13 @@ function About() {
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
                         <div className="github">
-                            <a href="/" title="GitHub"><i className="icon-social-github"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="GitHub"><i className="icon-social-github"></i></a>
                         </div>
                         <div className="linkedin">
-                            <a href="/" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
                         </div>
                         <div className="portfolio">
-                            <a href="/" title="Portfolio"><i className="icon-globe"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="Portfolio"><i className="icon-globe"></i></a>
                         </div>
                     </div>
                 </div>
@@ -53,13 +53,13 @@ function About() {
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
                         <div className="github">
-                            <a href="/" title="GitHub"><i className="icon-social-github"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="GitHub"><i className="icon-social-github"></i></a>
                         </div>
                         <div className="linkedin">
-                            <a href="/" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
                         </div>
                         <div className="portfolio">
-                            <a href="/" title="Portfolio"><i class="icon-globe"></i></a>
+                            <a href="/" target="_blank" rel="nofollow noopener noreferrer" title="Portfolio"><i className="icon-globe"></i></a>
                         </div>
                     </div>
                 </div>
@@ -74,13 +74,13 @@ function About() {
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
                         <div className="github">
-                            <a href="https://github.com/carlynicholson" title="GitHub"><i className="icon-social-github"></i></a>
+                            <a href="https://github.com/carlynicholson" target="_blank" rel="nofollow noopener noreferrer" title="GitHub"><i className="icon-social-github"></i></a>
                         </div>
                         <div className="linkedin">
-                            <a href="https://www.linkedin.com/in/carlypnicholson/" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/carlypnicholson/" target="_blank" rel="nofollow noopener noreferrer" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
                         </div>
                         <div className="portfolio">
-                            <a href="https://carlynicholson.github.io/portfolio/" title="Portfolio"><i class="icon-globe"></i></a>
+                            <a href="https://carlynicholson.github.io/portfolio/" target="_blank" rel="nofollow noopener noreferrer" title="Portfolio"><i class="icon-globe"></i></a>
                         </div>
                     </div>
                 </div>
@@ -95,22 +95,19 @@ function About() {
                     <p className="about-member">Taxidermy 90's man braid tumblr succulents literally paleo tote bag swag meh salvia art party you probably haven't heard of them sartorial. Etsy franzen pork belly williamsburg heirloom.</p>
                     <div className="social-links">
                         <div className="github">
-                            <a href="/" title="GitHub"><i className="icon-social-github"></i></a>
+                            <a href="https://github.com/bcantello" target="_blank" rel="nofollow noopener noreferrer" title="GitHub"><i className="icon-social-github"></i></a>
                         </div>
                         <div className="linkedin">
-                            <a href="/" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/brandon-cantello/" target="_blank" rel="nofollow noopener noreferrer" title="LinkedIn"><i className="icon-social-linkedin"></i></a>
                         </div>
                         <div className="portfolio">
-                            <a href="/" title="Portfolio"><i class="icon-globe"></i></a>
+                            <a href="http://brandoncantello.com/" target="_blank" rel="nofollow noopener noreferrer" title="Portfolio"><i class="icon-globe"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        
         <Footer />
         </div>
-
-
         </>
     )
 }

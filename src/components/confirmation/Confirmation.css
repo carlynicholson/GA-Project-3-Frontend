@@ -23,7 +23,6 @@
     height: 100%;
     width: 50%;
     min-width: 250px;
-    /* max-width: 532px; */
     padding: 20px 10px 20px 10px;
     margin-top: 35px;
 }
@@ -51,6 +50,10 @@ h3.conf-h3 {
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0 10px 0;
+}
+
+.conf-h3 span {
+    color: #E56C4E;
 }
 
 p.conf-par {

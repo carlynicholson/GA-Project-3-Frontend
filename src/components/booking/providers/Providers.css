@@ -8,7 +8,7 @@
 #provider-service-title {
     color: #E56C4E;
     font-size: 28px;
-    font-weight: 650;
+    font-weight: 600;
     margin: 1.5em 0 .25em 0;
 }
 
@@ -47,6 +47,10 @@
 .book-provider-icon img {
     height: 2em;
     margin: 70px 30px 0 0;
+}
+
+.book-provider-icon img:hover {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

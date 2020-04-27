@@ -12,6 +12,8 @@ function Login(props) {
         password: "",
     });
 
+    const Demo = {email: 'taylor@demo.com', password: 'demo'}
+
     const handleChange = (e) => {
         const value = e.target.value
         setUser({...User, [e.target.name]: value});
@@ -19,7 +21,20 @@ function Login(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const json = await verifyUser(User).then(response => {
+        await verifyUser(User).then(response => {
+            if (response.status === 200) {
+                handleSuccessfulAuth(response.data)
+            } else {
+                console.log('login error')
+            }
+        }).catch(error => {
+            console.log("registration error", error)
+        });
+    };
+
+    const handleDemoSubmit = async (e) => {
+        e.preventDefault();
+        await verifyUser(Demo).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data)
             } else {
@@ -34,8 +49,6 @@ function Login(props) {
         appProps.handleLogin(data);
         props.history.push("/dashboard");
     };
-
-    
 
     return (
         <>
@@ -60,6 +73,7 @@ function Login(props) {
                         <button className="Login-Form-Button" type="submit">continue</button>
                     </form>
                     <p className="login-prompt">Don't have an account? <Link to="/signup">Create one!</Link></p>
+                    <p id={'demo-login'}>or <span id={'demo-login-link'} onClick={handleDemoSubmit}>Login to Demo</span></p>
                 </div>
             </div>
         </div>

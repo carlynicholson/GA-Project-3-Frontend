@@ -2,7 +2,6 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { slide as Menu } from 'react-burger-menu';
 import './Menu.css';
-
 import Logo from '../../assets/logo-color.png';
 import Pup from '../../assets/pup.png';
 import House from '../../assets/house.png';
@@ -15,9 +14,7 @@ class Sidebar extends React.Component {
     }
 
 render () {
-    
     return (
-    
         <>
         <Menu>
 
@@ -28,11 +25,13 @@ render () {
             </Link>
 
             <div className="menu-profile">
-                <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
+                <Link to={'/profile'} style={{textDecoration: 'none'}}>
                     <img className="user-photo" src={Pup} alt='Photo'/>
-                    <h1 className="user-name">Taylor</h1>
-                    <p className="profile-action">Sign Out</p>
+                    <h1 className="user-name">{this.props.userName}</h1>
                 </Link>
+                <Link to={'/login'} style={{textDecoration: 'none'}}>
+                    <p className="profile-action">Sign Out</p>
+                </Link>                
             </div>
 
             <div className="divider"></div>
@@ -42,7 +41,7 @@ render () {
                 <div className="menu-home">Home</div>
             </Link>
 
-            <Link to={'/add-pet'} style={{textDecoration: 'none'}}>
+            <Link to={'/addpet'} style={{textDecoration: 'none'}}>
                 <img className="user-pets" src={Paw} alt='Pets'/>
                 <div className="menu-pets">Pets</div>
             </Link>
@@ -55,9 +54,7 @@ render () {
         </Menu>
         </>
         );
-
     }
-
 }
 
 export default Sidebar;

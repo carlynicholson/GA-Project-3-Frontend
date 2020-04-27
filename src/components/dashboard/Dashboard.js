@@ -52,7 +52,6 @@ function Dashboard() {
             <Link to={'/services'}>
                 <button id={'dash-book-button'}>BOOK A SERVICE</button>
             </Link>
-
             <Footer />
         </>
     );
