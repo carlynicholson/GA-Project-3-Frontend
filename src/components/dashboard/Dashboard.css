@@ -90,6 +90,10 @@ Link {
     color: white;
 }
 
+#dash-book-button:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     #dash-service-title {
         font-size: 1.5em;

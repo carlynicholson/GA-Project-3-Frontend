@@ -10,7 +10,7 @@ function ProvidersListItem(props) {
 	const handleBookClick = async(e) => {
 		e.preventDefault();
 		let book = props.element['_id'];
-		setProviderID(book)
+		await setProviderID(book)
 		await createAppointment(appProps.appointmentInfo).then((response) => {
 			if (response.status === 200) {
 				appProps.setNewAppointment([...appProps.newAppointment, appProps.appointmentInfo]);

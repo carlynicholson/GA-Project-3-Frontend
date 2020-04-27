@@ -11,11 +11,11 @@ function Header() {
     return (
         <nav>
             <Sidebar userName={userName}/>
-            <Link to={'/'} style={{textDecoration: 'none'}}>
-                <div id={'serv-logo-container'}>
+            <div id={'serv-logo-container'}>
+                <Link to={'/'} style={{textDecoration: 'none'}}>
                     <img id={'serv-logo'} src={Logo} alt={'logo'}/>
-                </div>
-            </Link>
+                </Link>
+            </div>
         </nav>
     );
 }
