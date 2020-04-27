@@ -11,7 +11,7 @@ function ProvidersListItem(props) {
 		e.preventDefault();
 		let book = props.element['_id'];
 		setProviderID(book)
-		const json = await createAppointment(appProps.appointmentInfo).then((response) => {
+		await createAppointment(appProps.appointmentInfo).then((response) => {
 			if (response.status === 200) {
 				appProps.setNewAppointment([...appProps.newAppointment, appProps.appointmentInfo]);
 				history.push("/confirmation");
