@@ -21,7 +21,7 @@ function Login(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const json = await verifyUser(User).then(response => {
+        await verifyUser(User).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data)
             } else {
@@ -34,7 +34,7 @@ function Login(props) {
 
     const handleDemoSubmit = async (e) => {
         e.preventDefault();
-        const json = await verifyUser(Demo).then(response => {
+        await verifyUser(Demo).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data)
             } else {

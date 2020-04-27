@@ -22,7 +22,7 @@ function CreatePet(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const json = await createPet(newPet).then(response => {
+        await createPet(newPet).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data);
             }

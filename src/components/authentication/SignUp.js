@@ -20,12 +20,12 @@ function SignUp(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const json = await createUser(newUser).then(response => {
+        await createUser(newUser).then(response => {
             if (response.status === 200) {
                 handleSuccessfulAuth(response.data);
             }
         }).catch(error => {
-            console.log("registration error", error);
+            return(error);
         });
     };
 

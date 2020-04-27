@@ -10,7 +10,7 @@ function PetConfirmation(props) {
         
     useEffect(() => {
         const allPetsAPICall = async () => {
-            const json = await getAllPets(user._id).then(response => {
+            await getAllPets(user._id).then(response => {
                 if (response.status === 200) {
                     appProps.setPets(response.data);
                 }
