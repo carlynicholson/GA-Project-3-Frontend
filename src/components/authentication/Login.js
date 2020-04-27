@@ -56,7 +56,8 @@ function Login(props) {
             <img className="Login-Image" src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587589538/Project3/logo-white_qn3hrm.png" alt="Fetch logo" />
             <div className="Login-Container">
                 <div className="Login">
-                    <div className="User-Login">user login</div>
+                    <div className="User-Login"><h1>user login</h1></div>
+                    <p id={'demo-login'}><span id={'demo-login-link'} onClick={handleDemoSubmit}>LOGIN TO DEMO</span></p>
                     <form className="Login-Form" onSubmit={handleSubmit}>
                         <input className="Login-Form-Input"
                                type="email"
@@ -73,7 +74,6 @@ function Login(props) {
                         <button className="Login-Form-Button" type="submit">continue</button>
                     </form>
                     <p className="login-prompt">Don't have an account? <Link to="/signup">Create one!</Link></p>
-                    <p id={'demo-login'}>or <span id={'demo-login-link'} onClick={handleDemoSubmit}>Login to Demo</span></p>
                 </div>
             </div>
         </div>
