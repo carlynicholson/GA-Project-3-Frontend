@@ -6,13 +6,11 @@ import './SignUp-Login.css'
 
 function Login(props) {
     const appProps = useContext(AppContext)
-
+    const Demo = {email: 'taylor@demo.com', password: 'demo'}
     const [User, setUser] = useState({
         email: "",
         password: "",
     });
-
-    const Demo = {email: 'taylor@demo.com', password: 'demo'}
 
     const handleChange = (e) => {
         const value = e.target.value
