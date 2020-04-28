@@ -34,8 +34,6 @@ render () {
                 </Link>                
             </div>
 
-            <div className="divider"></div>
-
             <Link to={'/dashboard'} style={{textDecoration: 'none'}}>
                 <img className="user-home" src={House} alt='Home'/>
                 <div className="menu-home">Home</div>
@@ -48,7 +46,7 @@ render () {
 
             <Link to={'/our-team'} style={{textDecoration: 'none'}}>
                 <img className="about-team" src={Ball} alt='Our Team'/>
-                <div className="menu-team">Our Team</div>
+                <div className="menu-about">Our Team</div>
             </Link>
 
         </Menu>
