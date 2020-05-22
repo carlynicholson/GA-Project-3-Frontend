@@ -30,11 +30,13 @@ function ProvidersListItem(props) {
 	return (
 		<div className={'provider-item'}>
 			<div className={'provider-img-name-container'}>
-				<div className={'provider-image'}><img
-					className="provider-photo"
-					src={props.element.img}
-					alt={'provider'}/></div>
-				<div className={'provider-name'}>{props.element.name}</div>
+				<div className={'provider-image'}>
+					<img className="provider-photo"
+						src={props.element.img}
+						alt={'provider'}
+						onClick={handleBookClick}/>
+				</div>
+				<div className={'provider-name'} onClick={handleBookClick}>{props.element.name}</div>
 			</div>
 			<div className={'book-provider-icon'}>
 				<img src={Book}

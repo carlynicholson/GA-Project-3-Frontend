@@ -39,9 +39,17 @@
     margin-top: 25px;
 }
 
+.provider-photo:hover {
+    cursor: pointer;
+}
+
 .provider-name {
     color: #A9A9A9;
     font-size: 1.5em;
+}
+
+.provider-name:hover {
+    cursor: pointer;
 }
 
 .book-provider-icon img {
