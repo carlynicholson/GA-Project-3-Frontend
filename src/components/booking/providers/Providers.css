@@ -39,9 +39,19 @@
     margin-top: 25px;
 }
 
+.provider-photo:hover {
+    cursor: pointer;
+    opacity: .90;
+}
+
 .provider-name {
     color: #A9A9A9;
     font-size: 1.5em;
+}
+
+.provider-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .book-provider-icon img {
@@ -51,6 +61,7 @@
 
 .book-provider-icon img:hover {
     cursor: pointer;
+    opacity: .70;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

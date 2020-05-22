@@ -15,28 +15,28 @@ export default function Services() {
 			<h2 id={'booking-service-title'}>Which service does your pup need?</h2>
 			<div id={'booking-service-icon-container'}>
 				<div className={'booking-service-walk-icon'}>
-					<Link to={'/calendar'}>
+					<Link to={'/calendar'} style={{textDecoration: 'none'}}>
 						<img src={walkIcon}
 						     alt={'walk'}
 						     onClick={ () => appProps.handleServiceClick('Walk')}/>
+						<p>Walk</p>
 					</Link>
-					<p>Walk</p>
 				</div>
 				<div className={'booking-service-groom-icon'}>
-					<Link to={'/calendar'}>
+					<Link to={'/calendar'} style={{textDecoration: 'none'}}>
 						<img src={groomIcon}
 						     alt={'groom'}
 						     onClick={ () => appProps.handleServiceClick('Groom')}/>
+						<p>Groom</p>
 					</Link>
-					<p>Groom</p>
 				</div>
 				<div className={'booking-service-overnight-icon'}>
-					<Link to={'/calendar'}>
+					<Link to={'/calendar'} style={{textDecoration: 'none'}}>
 						<img src={overnightIcon}
 						     alt={'overnight'}
 						     onClick={ () => appProps.handleServiceClick('Overnight')}/>
+						<p>Overnight</p>
 					</Link>
-					<p>Overnight</p>
 				</div>
 			</div>
 		</div>
