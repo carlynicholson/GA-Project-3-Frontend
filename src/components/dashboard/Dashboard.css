@@ -33,17 +33,11 @@
     margin-bottom: .3em;
     padding-top: 35px;
     font-weight: 700;
-    text-decoration: none !important;
 }
 
 #dash-service-icon-container {
     display: flex;
     justify-content: space-around;
-    text-decoration: none !important;
-}
-
-Link {
-    text-decoration: none !important;
 }
 
 #dash-upcoming-title {
@@ -108,7 +102,6 @@ Link {
         margin-bottom: .3em;
         padding-top: 35px;
         font-weight: 600;
-        text-decoration: none !important;
     }
 
     #dash-book-button {

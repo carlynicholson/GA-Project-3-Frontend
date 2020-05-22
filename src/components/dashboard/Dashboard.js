@@ -18,7 +18,7 @@ function Dashboard() {
                 <h2 id={'dash-service-title'}>Which service does your pup need?</h2>
                 <div id={'dash-service-icon-container'}>
                     <div className={'dash-service-icon'}>
-                        <Link to={'/calendar'} style={{textDecoration: 'none'}}>
+                        <Link to={'/calendar'} style={{textDecoration: 'none'}} className={"service-link"}>
                             <img src={walkIcon}
                                  alt={'walk'}
                                  onClick={() => appProps.handleServiceClick('Walk')}/>
