@@ -18,31 +18,31 @@ function Dashboard() {
                 <h2 id={'dash-service-title'}>Which service does your pup need?</h2>
                 <div id={'dash-service-icon-container'}>
                     <div className={'dash-service-icon'}>
-                        <Link to={'/calendar'}>
+                        <Link to={'/calendar'} style={{textDecoration: 'none'}}>
                             <img src={walkIcon}
                                  alt={'walk'}
                                  onClick={() => appProps.handleServiceClick('Walk')}/>
+                            <p className={'dash-service'}>Walk</p>
+                            <p id={'dash-walk-pricing'}> Starting at $15</p>
                         </Link>
-                        <p className={'dash-service'}>Walk</p>
-                        <p id={'dash-walk-pricing'}> Starting at $15</p>
                     </div>
                     <div className={'dash-service-icon'}>
-                        <Link to={'/calendar'}>
+                        <Link to={'/calendar'} style={{textDecoration: 'none'}}>
                             <img src={groomIcon}
                                  alt={'groom'}
                                  onClick={() => appProps.handleServiceClick('Groom')}/>
+                            <p className={'dash-service'}>Groom</p>
+                            <p id={'dash-groom-details'}>New service!</p>
                         </Link>
-                        <p className={'dash-service'}>Groom</p>
-                        <p id={'dash-groom-details'}>New service!</p>
                     </div>
                     <div className={'dash-service-icon'}>
-                        <Link to={'/calendar'}>
+                        <Link to={'/calendar'} style={{textDecoration: 'none'}}>
                             <img src={overnightIcon}
                                  alt={'overnight'}
                                  onClick={() => appProps.handleServiceClick('Overnight')}/>
+                            <p className={'dash-service'}>Overnight</p>
+                            <p id={'dash-overnight-details'}>Sitting and boarding</p>
                         </Link>
-                        <p className={'dash-service'}>Overnight</p>
-                        <p id={'dash-overnight-details'}>Sitting and boarding</p>
                     </div>
                 </div>
             </div>
