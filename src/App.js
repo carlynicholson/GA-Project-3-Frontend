@@ -4,39 +4,46 @@ import Main from './components/Main'
 import {getProviderByZip} from "./services/api-helper";
 
 function App() {
-    const [service, setService] = useState("");
+    const [service, setService] = useState(() => {
+        const result = localStorage.getItem('service');
+        return result ? result : ""
+    });
     const [date, setDate] = useState(new Date());
     const [appointmentTime, setAppointmentTime] = useState('10:00')
-    const [localProviders, setLocalProviders] = useState([]);
+    const [localProviders, setLocalProviders] = useState(() => {
+        const providers = localStorage.getItem('providers');
+        return JSON.parse(providers) ? JSON.parse(providers) : []
+    });
     const [chosenProvider, setChosenProvider] = useState();
     const [newAppointment, setNewAppointment] = useState([]);
-    const [loggedIn, setLoggedIn] = useState({
-        loggedInStatus: "Not_Logged_In",
-        user: {}
-    });
     const [pets, setPets] = useState([])
+    const [loggedIn, setLoggedIn] = useState(() => {
+        const result = localStorage.getItem('user');
+        return JSON.parse(result) ? JSON.parse(result) : {}
+    });
     const appointmentInfo = {
         date: date,
         time: appointmentTime,
         service: service,
-        petId: loggedIn.user['pet'],
-        user_id: loggedIn.user['_id'],
+        petId: loggedIn['pet'],
+        user_id: loggedIn['_id'],
         provider_id: chosenProvider
     }
 
     const handleLogin = (data) => {
-        setLoggedIn({
-            loggedInStatus: "Logged_In",
-            user: data
-        })
+        localStorage.setItem('user', JSON.stringify(data));
+        const loggedInUser = localStorage.getItem('user');
+        setLoggedIn(JSON.parse(loggedInUser));
     };
 
     const handleServiceClick = async(service) => {
-        setService(service);
-        const json = await getProviderByZip(loggedIn.user.zip).then((response) => {
+        localStorage.setItem('service', service);
+        setService(localStorage.getItem('service'));
+        await getProviderByZip(loggedIn.zip).then((response) => {
             if (response.status === 200) {
-                console.log(response.data);
-                setLocalProviders([...localProviders, response.data]);
+                localStorage.setItem('providers', JSON.stringify(response.data));
+                const providers = localStorage.getItem('providers');
+                setLocalProviders(JSON.parse(providers));
             } else {
                 return ('login error');
             }

@@ -4,7 +4,7 @@ import {AppContext} from "../../App";
 
 export default function DashboardList() {
 	const appContext = useContext(AppContext);
-	const userAppointments = appContext.loggedIn.user['appointment'];
+	const userAppointments = appContext.loggedIn['appointment'];
 
 	const appointmentArray = userAppointments.map((e, index) => {
 		return (

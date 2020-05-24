@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useContext, useEffect} from 'react'
 import {getAllPets} from '../../services/api-helper'
 import {AppContext} from '../../App'
 import './SignUp-Login.css'
@@ -19,7 +19,7 @@ function PetConfirmation(props) {
             });
         }
         allPetsAPICall()
-    }, []);
+    }, [appProps, user._id]);
     
     const allPets = appProps.pets.map((pet,index) => {
         return (
