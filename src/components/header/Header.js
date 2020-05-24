@@ -7,7 +7,7 @@ import {AppContext} from "../../App";
 
 function Header() {
     const appProps = useContext(AppContext);
-    const userName = appProps.loggedIn.user.name;
+    const userName = appProps.loggedIn.name;
     return (
         <nav>
             <Sidebar userName={userName}/>

@@ -41,7 +41,7 @@ render () {
 
             <Link to={'/addpet'} style={{textDecoration: 'none'}}>
                 <img className="user-pets" src={Paw} alt='Pets'/>
-                <div className="menu-pets">Pets</div>
+                <div className="menu-pets">Add Pet</div>
             </Link>
 
             <Link to={'/our-team'} style={{textDecoration: 'none'}}>

@@ -8,7 +8,7 @@ export default function ProvidersList() {
 	const requestedService = appContext.service.toLowerCase();
 
 	function localServiceProvidersArr() {
-		appContext.localProviders[0].forEach(provider => {
+		appContext.localProviders.forEach(provider => {
 			if (provider.services[0][requestedService] === true) {
 				providerArr.push(provider);
 			}

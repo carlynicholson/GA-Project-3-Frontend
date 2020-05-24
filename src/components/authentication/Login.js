@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react'
+import React, {useContext, useState} from 'react'
 import {verifyUser} from '../../services/api-helper'
 import {AppContext} from '../../App.js'
 import {Link} from "react-router-dom";
@@ -17,31 +17,20 @@ function Login(props) {
         setUser({...User, [e.target.name]: value});
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        await verifyUser(User).then(response => {
-            if (response.status === 200) {
-                handleSuccessfulAuth(response.data)
-            } else {
-                console.log('login error')
-            }
-        }).catch(error => {
-            console.log("registration error", error)
-        });
-    };
-
-    const handleDemoSubmit = async (e) => {
-        e.preventDefault();
-        await verifyUser(Demo).then(response => {
-            if (response.status === 200) {
-                handleSuccessfulAuth(response.data)
-            } else {
-                console.log('login error')
-            }
-        }).catch(error => {
-            console.log("registration error", error)
-        });
-    };
+    function handleSubmit(credentials) {
+        return async (e) => {
+            e.preventDefault();
+            await verifyUser(credentials).then(response => {
+                if (response.status === 200) {
+                    handleSuccessfulAuth(response.data);
+                } else {
+                    console.log('login error');
+                }
+            }).catch(error => {
+                console.log("registration error", error);
+            });
+        };
+    }
 
     const handleSuccessfulAuth = (data) => {
         appProps.handleLogin(data);
@@ -55,8 +44,8 @@ function Login(props) {
             <div className="Login-Container">
                 <div className="Login">
                     <div className="User-Login"><h1>user login</h1></div>
-                    <p id={'demo-login'}><span id={'demo-login-link'} onClick={handleDemoSubmit}>LOGIN TO DEMO</span></p>
-                    <form className="Login-Form" onSubmit={handleSubmit}>
+                    <p id={'demo-login'}><span id={'demo-login-link'} onClick={handleSubmit(Demo)}>LOGIN TO DEMO</span></p>
+                    <form className="Login-Form" onSubmit={handleSubmit(User)}>
                         <input className="Login-Form-Input"
                                type="email"
                                name="email"
