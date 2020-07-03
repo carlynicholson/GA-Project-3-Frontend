@@ -5,20 +5,20 @@ import {getProviderByZip} from "./services/api-helper";
 
 function App() {
     const [service, setService] = useState(() => {
-        const result = localStorage.getItem('service');
+        const result = sessionStorage.getItem('service');
         return result ? result : ""
     });
     const [date, setDate] = useState(new Date());
     const [appointmentTime, setAppointmentTime] = useState('10:00')
     const [localProviders, setLocalProviders] = useState(() => {
-        const providers = localStorage.getItem('providers');
+        const providers = sessionStorage.getItem('providers');
         return JSON.parse(providers) ? JSON.parse(providers) : []
     });
     const [chosenProvider, setChosenProvider] = useState();
     const [newAppointment, setNewAppointment] = useState([]);
     const [pets, setPets] = useState([])
     const [loggedIn, setLoggedIn] = useState(() => {
-        const result = localStorage.getItem('user');
+        const result = sessionStorage.getItem('user');
         return JSON.parse(result) ? JSON.parse(result) : {}
     });
     const appointmentInfo = {
@@ -29,21 +29,20 @@ function App() {
         user_id: loggedIn['_id'],
         provider_id: chosenProvider
     }
-    console.log(loggedIn);
 
     const handleLogin = (data) => {
-        localStorage.setItem('user', JSON.stringify(data));
-        const loggedInUser = localStorage.getItem('user');
+        sessionStorage.setItem('user', JSON.stringify(data));
+        const loggedInUser = sessionStorage.getItem('user');
         setLoggedIn(JSON.parse(loggedInUser));
     };
 
     const handleServiceClick = async(service) => {
-        localStorage.setItem('service', service);
-        setService(localStorage.getItem('service'));
+        sessionStorage.setItem('service', service);
+        setService(sessionStorage.getItem('service'));
         await getProviderByZip(loggedIn.zip).then((response) => {
             if (response.status === 200) {
-                localStorage.setItem('providers', JSON.stringify(response.data));
-                const providers = localStorage.getItem('providers');
+                sessionStorage.setItem('providers', JSON.stringify(response.data));
+                const providers = sessionStorage.getItem('providers');
                 setLocalProviders(JSON.parse(providers));
             } else {
                 return ('login error');

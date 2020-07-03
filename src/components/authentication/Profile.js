@@ -5,9 +5,7 @@ import './SignUp-Login.css'
 
 function Profile(props) {
     const appProps = useContext(AppContext)
-    const user = appProps.loggedIn.user
-    console.log('Profile-user', user)
-    console.log('Profile-user', user._id)
+    const user = appProps.loggedIn
     
     useEffect(() => {
         const allPetsAPICall = async () => {
@@ -35,22 +33,21 @@ function Profile(props) {
 
     const handleXClick = async (e) => {
         e.preventDefault();
-        console.log('handleContinueSubmit')
         props.history.push("/dashboard");
     };
 
     const handlePetClick = async (e) => {
         e.preventDefault();
-        console.log('handlePetSubmit')
         props.history.push("/addpet");
     };
-    
+
     return (
         <div className="Profile">
             <div className="Profile-Title">profile</div>
             <img onClick={handleXClick}
                  className="Profile-X"
-                 src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587686236/Project3/L6TNqYa4_Bumdlj4r3RGgnPz1giNeTBS2-mV0FI0IuzBR1QBdydsrzhNFSs-jPE6ccl_1RbmvtwRNPJeXRAD05ZHjSL5t6SK8z_OlcRU_ouO_ojwdfs.jpg" alt="Exit" />
+                 src="https://res.cloudinary.com/de2i4dwok/image/upload/v1587686236/Project3/L6TNqYa4_Bumdlj4r3RGgnPz1giNeTBS2-mV0FI0IuzBR1QBdydsrzhNFSs-jPE6ccl_1RbmvtwRNPJeXRAD05ZHjSL5t6SK8z_OlcRU_ouO_ojwdfs.jpg"
+                 alt="Exit"/>
             <div className="User-Profile-Info-Container">
                 <div className="User-Profile-Item">Name: {user.name}</div>
                 <div className="User-Profile-Item">Email: {user.email}</div>
@@ -60,11 +57,12 @@ function Profile(props) {
             <div className="Pet-Confirmation">
                 <div className="All-Pets-Box">
                     <h1>{user.name}'s Pets</h1>
-                    <div className="All-Pets">{allPets}</div>                    
+                    <div className="All-Pets">{allPets}</div>
                     <div className="Pet-Buttons">
                         <button onClick={handlePetClick}
                                 className="Pet-Button"
-                                type="submit">add pet</button>
+                                type="submit">add pet
+                        </button>
                     </div>
                 </div>
             </div>
