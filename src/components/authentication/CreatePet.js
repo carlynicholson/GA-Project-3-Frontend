@@ -6,13 +6,13 @@ import Header from "../header/Header";
 
 function CreatePet(props) {
     const appContext = useContext(AppContext)
-    const user = appContext.loggedIn.user
+    const user = appContext.loggedIn
     const [newPet, setNewPet] = useState({
         name: "",
         age: "",
         breed: "",
         comments: "",
-        user_id: user._id        
+        user_id: user._id
     });
 
     const handleChange = (e) => {

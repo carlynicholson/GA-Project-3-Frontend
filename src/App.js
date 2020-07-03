@@ -29,6 +29,7 @@ function App() {
         user_id: loggedIn['_id'],
         provider_id: chosenProvider
     }
+    console.log(loggedIn);
 
     const handleLogin = (data) => {
         localStorage.setItem('user', JSON.stringify(data));
